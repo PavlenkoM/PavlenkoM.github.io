@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "appVersion": "dev",
+  "dynamicChunks": {},
+  "js": [
+    "runtime.js",
+    "transients.js",
+    "polyfill.js",
+    "sentry.js",
+    "vendors.js",
+    "checkout.js"
+  ],
+  "integrity": {}
+}

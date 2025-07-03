@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "appVersion": "dev",
+  "dynamicChunks": {},
+  "js": [
+    "loader-dev.js"
+  ],
+  "integrity": {}
+}
