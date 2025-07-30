@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stripe ACH demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://js.stripe.com/basil/stripe.js"></script>
+</head>
+
+<body>
+
+    <div class="container pt-5">
+        <div class="card mb-5">
+            <div class="card-body">
+                <h5 class="card-title">Stripe Data</h5>
+                <form onsubmit="onStripeKeysChange(event)">
+
+                    <div class="mb-3">
+                        <label for="pk" class="form-label">Public key</label>
+                        <input type="text" class="form-control" id="pk" placeholder="pk_test_xxxx"
+                            value="pk_test_51GnvZvFYHgt19eoyYwXFMPZQA5ZLlFUjVljOOcCSOlch3VsJLIqsBwwb3BkmLK0dq1XOfKBXcHZAdyc7FTftqozC006skKbMNl">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="clientSecret" class="form-label">Client Secret</label>
+                        <input type="text" class="form-control" id="clientSecret" placeholder="seti_xxxx_secret_xxxx"
+                            value="seti_1RqWchFYHgt19eoyrhS85DNf_secret_Sm4mAimoayvGmgNVqiewqMFnhMs6v2q">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Apply fields</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-5">
+            <div class="card-body">
+                <h5 class="card-title">Stripe ACH</h5>
+                <form onsubmit="onSubmit(event)">
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Account holder name</label>
+                        <input type="text" class="form-control" id="name" placeholder="name">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-5">
+            <div class="card-body">
+                <h5 class="card-title">Confirmation form</h5>
+                <form onsubmit="onConfirmationSubmit(event)">
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        let publicKey = 'pk_test_51GnvZvFYHgt19eoyYwXFMPZQA5ZLlFUjVljOOcCSOlch3VsJLIqsBwwb3BkmLK0dq1XOfKBXcHZAdyc7FTftqozC006skKbMNl';
+        let clientSecret = 'seti_1RqWchFYHgt19eoyrhS85DNf_secret_Sm4mAimoayvGmgNVqiewqMFnhMs6v2q';
+
+        let stripe;
+
+        const onStripeKeysChange = (e) => {
+            e.preventDefault();
+
+            publicKey = document.getElementById('pk').value;
+            clientSecret = document.getElementById('clientSecret').value;
+
+            console.log('Stripe public key:', publicKey);
+            stripe = Stripe(publicKey);
+        }
+
+        const onSubmit = (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value;
+
+            console.log('collectBankAccountForSetup');
+
+            stripe
+                .collectBankAccountForSetup({
+                    clientSecret: clientSecret,
+                    params: {
+                        payment_method_type: 'us_bank_account',
+                        payment_method_data: {
+                            billing_details: {
+                                name,
+                                email,
+                            },
+                        },
+                    },
+                    expand: ['payment_method'],
+                })
+                .then((result) => {
+                    console.log('*** collectBankAccountForSetup', result);
+                    const { setupIntent, error } = result;
+                    if (error) {
+                        console.error(error.message);
+                        // PaymentMethod collection failed for some reason.
+                    } else if (setupIntent.status === 'requires_payment_method') {
+                        // Customer canceled the hosted verification modal. Present them with other
+                        // payment method type options.
+                    } else if (setupIntent.status === 'requires_confirmation') {
+                        // We collected an account - possibly instantly verified, but possibly
+                        // manually-entered. Display payment method details and mandate text
+                        // to the customer and confirm the intent once they accept
+                        // the mandate.
+                        // confirmationForm.show();
+                    }
+                });
+        }
+
+        const onConfirmationSubmit = (e) => {
+            e.preventDefault();
+
+            stripe
+                .confirmUsBankAccountSetup(clientSecret)
+                .then((result) => {
+                    console.log('*** confirmUsBankAccountSetup', result);
+                    const { setupIntent, error } = result;
+                    if (error) {
+                        console.error(error.message);
+                        // The payment failed for some reason.
+                    } else if (setupIntent.status === "requires_payment_method") {
+                        // Confirmation failed. Attempt again with a different payment method.
+                    } else if (setupIntent.status === "succeeded") {
+                        // Confirmation succeeded! The account is now saved.
+                        // Display a message to customer.
+                    } else if (setupIntent.next_action?.type === "verify_with_microdeposits") {
+                        // The account needs to be verified through microdeposits.
+                        // Display a message to consumer with next steps (consumer waits for
+                        // microdeposits, then enters a statement descriptor code on a page sent to them through email).
+                    }
+                });
+        }
+
+    </script>
+</body>
+
+</html>
