@@ -34,6 +34,12 @@
                             value="seti_1RqWchFYHgt19eoyrhS85DNf_secret_Sm4mAimoayvGmgNVqiewqMFnhMs6v2q">
                     </div>
 
+                    <div class="mb-3">
+                        <label for="stripeConnectedAccount" class="form-label">Account ID</label>
+                        <input type="text" class="form-control" id="stripeConnectedAccount" placeholder="acct_xxxx"
+                            value="">
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Apply fields</button>
 
                 </form>
@@ -77,6 +83,7 @@
 
         let publicKey = 'pk_test_51GnvZvFYHgt19eoyYwXFMPZQA5ZLlFUjVljOOcCSOlch3VsJLIqsBwwb3BkmLK0dq1XOfKBXcHZAdyc7FTftqozC006skKbMNl';
         let clientSecret = 'seti_1RqWchFYHgt19eoyrhS85DNf_secret_Sm4mAimoayvGmgNVqiewqMFnhMs6v2q';
+        let stripeConnectedAccount = '';
 
         let stripe;
 
@@ -85,9 +92,15 @@
 
             publicKey = document.getElementById('pk').value;
             clientSecret = document.getElementById('clientSecret').value;
+            stripeConnectedAccount = document.getElementById('stripeConnectedAccount').value;
+            const options = {
+                ...(stripeConnectedAccount ? { stripeAccount: stripeConnectedAccount } : {}),
+            };
 
             console.log('Stripe public key:', publicKey);
-            stripe = Stripe(publicKey);
+            console.log('Stripe client secret:', clientSecret);
+            console.log('Stripe connected account:', stripeConnectedAccount);
+            stripe = Stripe(publicKey, options);
         }
 
         const onSubmit = (e) => {
