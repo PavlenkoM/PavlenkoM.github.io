@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "appVersion": "1.0.0",
-  "dynamicChunks": {},
-  "js": [
-    "loader-1.0.0.js"
-  ],
-  "integrity": {}
-}
