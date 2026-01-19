@@ -3,10 +3,6 @@
   "appVersion": "dev",
   "dynamicChunks": {},
   "js": [
-    "runtime.js",
-    "transients.js",
-    "vendor-initial.js",
-    "checkout.js",
     "loader-dev.js"
   ],
   "integrity": {}
