@@ -298,7 +298,7 @@ const SaveAddressForm = (0,_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE
 const AddressFormModal = (_a) => {
     var { isOpen, onAfterOpen, onRequestClose } = _a, addressFormProps = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__rest)(_a, ["isOpen", "onAfterOpen", "onRequestClose"]);
     const { themeV2 } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_5__.useThemeContext)();
-    return (react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_10__["default"], { additionalModalClassName: classnames__WEBPACK_IMPORTED_MODULE_1___default()('modal--medium', { themeV2 }), header: react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_12__["default"], null,
+    return (react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_10__["default"], { additionalModalClassName: classnames__WEBPACK_IMPORTED_MODULE_1___default()('modal--medium', 'modal--address', { themeV2 }), header: react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_12__["default"], null,
             react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_6__["default"], { id: "address.add_address_heading" })), isOpen: isOpen, onAfterOpen: onAfterOpen, onRequestClose: onRequestClose, shouldShowCloseButton: true },
         react__WEBPACK_IMPORTED_MODULE_3___default().createElement(SaveAddressForm, Object.assign({}, addressFormProps, { onRequestClose: onRequestClose }))));
 };
@@ -758,25 +758,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.mjs");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/contexts */ "./packages/contexts/src/checkout/useCheckout.tsx");
-/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/TranslatedString.tsx");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/B2BExtraFieldsSessionStorage.ts");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/mapAddressFromFormValues.ts");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/stripExtraFieldsFromAddress.ts");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/AddressFormModal.tsx");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/AddressSelect.tsx");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/AddressType.ts");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/isValidAddress.ts");
-/* harmony import */ var _common_error__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../common/error */ "./packages/core/src/app/common/error/ErrorModal.tsx");
-/* harmony import */ var _common_utility__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../common/utility */ "./packages/core/src/app/common/utility/emptyData.ts");
-/* harmony import */ var _common_utility__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../common/utility */ "./packages/core/src/app/common/utility/isExperimentEnabled.ts");
-/* harmony import */ var _formFields__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../formFields */ "./packages/core/src/app/formFields/mapAddressExtraFieldsFromFormValues.ts");
-/* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./errors */ "./packages/core/src/app/shipping/errors/AssignItemFailedError.ts");
-/* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./errors */ "./packages/core/src/app/shipping/errors/AssignItemInvalidAddressError.ts");
-/* harmony import */ var _GuestCustomerAddressSelector__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./GuestCustomerAddressSelector */ "./packages/core/src/app/shipping/GuestCustomerAddressSelector.tsx");
-/* harmony import */ var _hooks_useShipping__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./hooks/useShipping */ "./packages/core/src/app/shipping/hooks/useShipping.ts");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./utils */ "./packages/core/src/app/shipping/utils/setRecommendedOrMissingShippingOption.ts");
-
+/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/TranslatedString.tsx");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/B2BExtraFieldsSessionStorage.ts");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/mapAddressFromFormValues.ts");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/stripExtraFieldsFromAddress.ts");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/AddressFormModal.tsx");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/AddressSelect.tsx");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/AddressType.ts");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/isValidAddress.ts");
+/* harmony import */ var _common_error__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../common/error */ "./packages/core/src/app/common/error/ErrorModal.tsx");
+/* harmony import */ var _common_utility__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../common/utility */ "./packages/core/src/app/common/utility/emptyData.ts");
+/* harmony import */ var _formFields__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../formFields */ "./packages/core/src/app/formFields/mapAddressExtraFieldsFromFormValues.ts");
+/* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./errors */ "./packages/core/src/app/shipping/errors/AssignItemFailedError.ts");
+/* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./errors */ "./packages/core/src/app/shipping/errors/AssignItemInvalidAddressError.ts");
+/* harmony import */ var _GuestCustomerAddressSelector__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./GuestCustomerAddressSelector */ "./packages/core/src/app/shipping/GuestCustomerAddressSelector.tsx");
+/* harmony import */ var _hooks_useShipping__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./hooks/useShipping */ "./packages/core/src/app/shipping/hooks/useShipping.ts");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./utils */ "./packages/core/src/app/shipping/utils/setRecommendedOrMissingShippingOption.ts");
 
 
 
@@ -792,24 +789,17 @@ const ConsignmentAddressSelector = ({ consignment, defaultCountryCode, isLoading
     var _a;
     const [isOpenNewAddressModal, setIsOpenNewAddressModal] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     const [createCustomerAddressError, setCreateCustomerAddressError] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();
-    const { checkoutState: { data: { getCustomer, getConfig, getConsignments: getPreviousConsignments }, }, checkoutService: { updateConsignment, createCustomerAddress, selectConsignmentShippingOption, }, } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_2__.useCheckout)();
-    const { getFields } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_18__.useShipping)();
-    const customer = getCustomer();
-    const config = getConfig();
-    if (!config || !customer) {
-        return null;
-    }
-    const storageKey = _address__WEBPACK_IMPORTED_MODULE_4__.B2BExtraFieldsSessionStorage.getConsignmentKey((_a = consignment === null || consignment === void 0 ? void 0 : consignment.id) !== null && _a !== void 0 ? _a : '');
+    const { getFields, selectConsignmentShippingOption, updateConsignment, createCustomerAddress, customer, validateMaxLength, getConsignments: getPreviousConsignments, } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_16__.useShipping)();
+    const storageKey = _address__WEBPACK_IMPORTED_MODULE_3__.B2BExtraFieldsSessionStorage.getConsignmentKey((_a = consignment === null || consignment === void 0 ? void 0 : consignment.id) !== null && _a !== void 0 ? _a : '');
     // TODO: add filter for addresses
-    const addresses = customer.addresses || _common_utility__WEBPACK_IMPORTED_MODULE_12__.EMPTY_ARRAY;
+    const addresses = customer.addresses || _common_utility__WEBPACK_IMPORTED_MODULE_11__.EMPTY_ARRAY;
     const isGuest = customer.isGuest;
-    const validateMaxLength = (0,_common_utility__WEBPACK_IMPORTED_MODULE_13__["default"])(config === null || config === void 0 ? void 0 : config.checkoutSettings, 'CHECKOUT-9768.form_fields_max_length_validation', false);
     const handleSelectAddress = (address) => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
         var _a;
-        if (!(0,_address__WEBPACK_IMPORTED_MODULE_10__["default"])(address, getFields(address.countryCode), validateMaxLength)) {
-            return onUnhandledError(new _errors__WEBPACK_IMPORTED_MODULE_16__["default"]());
+        if (!(0,_address__WEBPACK_IMPORTED_MODULE_9__["default"])(address, getFields(address.countryCode), validateMaxLength)) {
+            return onUnhandledError(new _errors__WEBPACK_IMPORTED_MODULE_14__["default"]());
         }
-        const addressWithoutExtraFields = (0,_address__WEBPACK_IMPORTED_MODULE_6__["default"])(address);
+        const addressWithoutExtraFields = (0,_address__WEBPACK_IMPORTED_MODULE_5__["default"])(address);
         if (!consignment) {
             setConsignmentRequest === null || setConsignmentRequest === void 0 ? void 0 : setConsignmentRequest({
                 address: addressWithoutExtraFields,
@@ -830,12 +820,12 @@ const ConsignmentAddressSelector = ({ consignment, defaultCountryCode, isLoading
             });
             const currentConsignments = getConsignments();
             if (currentConsignments && currentConsignments.length > 0) {
-                yield (0,_utils__WEBPACK_IMPORTED_MODULE_19__.setRecommendedOrMissingShippingOption)((_a = getPreviousConsignments()) !== null && _a !== void 0 ? _a : [], currentConsignments, selectConsignmentShippingOption);
+                yield (0,_utils__WEBPACK_IMPORTED_MODULE_17__.setRecommendedOrMissingShippingOption)((_a = getPreviousConsignments()) !== null && _a !== void 0 ? _a : [], currentConsignments, selectConsignmentShippingOption);
             }
         }
         catch (error) {
             if (error instanceof Error) {
-                onUnhandledError(new _errors__WEBPACK_IMPORTED_MODULE_15__["default"](error));
+                onUnhandledError(new _errors__WEBPACK_IMPORTED_MODULE_13__["default"](error));
             }
         }
     });
@@ -846,8 +836,8 @@ const ConsignmentAddressSelector = ({ consignment, defaultCountryCode, isLoading
         setIsOpenNewAddressModal(false);
     };
     const handleSaveAddress = (addressFormValues) => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
-        const address = (0,_address__WEBPACK_IMPORTED_MODULE_5__["default"])(addressFormValues, storageKey);
-        yield handleSelectAddress(Object.assign(Object.assign({}, address), { extraFields: (0,_formFields__WEBPACK_IMPORTED_MODULE_14__["default"])(addressFormValues.extraFields) }));
+        const address = (0,_address__WEBPACK_IMPORTED_MODULE_4__["default"])(addressFormValues, storageKey);
+        yield handleSelectAddress(Object.assign(Object.assign({}, address), { extraFields: (0,_formFields__WEBPACK_IMPORTED_MODULE_12__["default"])(addressFormValues.extraFields) }));
         if (!isGuest) {
             try {
                 yield createCustomerAddress(address);
@@ -864,12 +854,12 @@ const ConsignmentAddressSelector = ({ consignment, defaultCountryCode, isLoading
         setCreateCustomerAddressError(undefined);
     };
     return (react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null,
-        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_common_error__WEBPACK_IMPORTED_MODULE_11__["default"], { error: createCustomerAddressError, message: react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null,
-                react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_3__["default"], { id: "address.consignment_address_updated_text" }),
+        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_common_error__WEBPACK_IMPORTED_MODULE_10__["default"], { error: createCustomerAddressError, message: react__WEBPACK_IMPORTED_MODULE_1___default().createElement((react__WEBPACK_IMPORTED_MODULE_1___default().Fragment), null,
+                react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__["default"], { id: "address.consignment_address_updated_text" }),
                 ' ',
-                react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_3__["default"], { id: "customer.create_address_error" })), onClose: handleCloseErrorModal, shouldShowErrorCode: false }),
-        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_address__WEBPACK_IMPORTED_MODULE_7__["default"], { defaultCountryCode: defaultCountryCode, getFields: getFields, isLoading: isLoading, isOpen: isOpenNewAddressModal, onRequestClose: handleCloseAddAddressForm, onSaveAddress: handleSaveAddress, selectedAddress: isGuest ? selectedAddress : undefined, storageKey: storageKey }),
-        isGuest ? (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_GuestCustomerAddressSelector__WEBPACK_IMPORTED_MODULE_17__["default"], { onUseNewAddress: handleUseNewAddress, selectedAddress: selectedAddress })) : (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_address__WEBPACK_IMPORTED_MODULE_8__["default"], { addresses: addresses, onSelectAddress: handleSelectAddress, onUseNewAddress: handleUseNewAddress, placeholderText: react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_3__["default"], { id: "shipping.choose_shipping_address" }), selectedAddress: selectedAddress, showSingleLineAddress: true, storageKey: storageKey, type: _address__WEBPACK_IMPORTED_MODULE_9__["default"].Shipping }))));
+                react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__["default"], { id: "customer.create_address_error" })), onClose: handleCloseErrorModal, shouldShowErrorCode: false }),
+        react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_address__WEBPACK_IMPORTED_MODULE_6__["default"], { defaultCountryCode: defaultCountryCode, getFields: getFields, isLoading: isLoading, isOpen: isOpenNewAddressModal, onRequestClose: handleCloseAddAddressForm, onSaveAddress: handleSaveAddress, selectedAddress: isGuest ? selectedAddress : undefined, storageKey: storageKey }),
+        isGuest ? (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_GuestCustomerAddressSelector__WEBPACK_IMPORTED_MODULE_15__["default"], { onUseNewAddress: handleUseNewAddress, selectedAddress: selectedAddress })) : (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_address__WEBPACK_IMPORTED_MODULE_7__["default"], { addresses: addresses, onSelectAddress: handleSelectAddress, onUseNewAddress: handleUseNewAddress, placeholderText: react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__["default"], { id: "shipping.choose_shipping_address" }), selectedAddress: selectedAddress, showSingleLineAddress: true, storageKey: storageKey, type: _address__WEBPACK_IMPORTED_MODULE_8__["default"].Shipping }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ConsignmentAddressSelector);
 
@@ -1201,21 +1191,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout/contexts */ "./packages/contexts/src/checkout/useCheckout.tsx");
-/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/TranslatedString.tsx");
-/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/withLanguage.tsx");
-/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/alert/Alert.tsx");
-/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/button/Button.tsx");
-/* harmony import */ var _common_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common/form */ "./packages/core/src/app/common/form/withFormikExtended.tsx");
-/* harmony import */ var _common_utility__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/utility */ "./packages/core/src/app/common/utility/emptyData.ts");
-/* harmony import */ var _ConsignmentListItem__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ConsignmentListItem */ "./packages/core/src/app/shipping/ConsignmentListItem.tsx");
-/* harmony import */ var _hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./hasSelectedShippingOptions */ "./packages/core/src/app/shipping/hasSelectedShippingOptions.ts");
-/* harmony import */ var _hooks_useMultishippingConsignmentItems__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./hooks/useMultishippingConsignmentItems */ "./packages/core/src/app/shipping/hooks/useMultishippingConsignmentItems.ts");
-/* harmony import */ var _isSelectedShippingOptionValid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./isSelectedShippingOptionValid */ "./packages/core/src/app/shipping/isSelectedShippingOptionValid.ts");
-/* harmony import */ var _MultiShippingFormFooter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./MultiShippingFormFooter */ "./packages/core/src/app/shipping/MultiShippingFormFooter.tsx");
-/* harmony import */ var _MultiShippingForm_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./MultiShippingForm.scss */ "./packages/core/src/app/shipping/MultiShippingForm.scss");
-/* harmony import */ var _MultiShippingForm_scss__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_MultiShippingForm_scss__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _NewConsignment__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./NewConsignment */ "./packages/core/src/app/shipping/NewConsignment.tsx");
+/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/TranslatedString.tsx");
+/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/withLanguage.tsx");
+/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/alert/Alert.tsx");
+/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/button/Button.tsx");
+/* harmony import */ var _common_form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/form */ "./packages/core/src/app/common/form/withFormikExtended.tsx");
+/* harmony import */ var _ConsignmentListItem__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ConsignmentListItem */ "./packages/core/src/app/shipping/ConsignmentListItem.tsx");
+/* harmony import */ var _hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./hasSelectedShippingOptions */ "./packages/core/src/app/shipping/hasSelectedShippingOptions.ts");
+/* harmony import */ var _hooks_useMultishippingConsignmentItems__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./hooks/useMultishippingConsignmentItems */ "./packages/core/src/app/shipping/hooks/useMultishippingConsignmentItems.ts");
+/* harmony import */ var _hooks_useShipping__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./hooks/useShipping */ "./packages/core/src/app/shipping/hooks/useShipping.ts");
+/* harmony import */ var _isSelectedShippingOptionValid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./isSelectedShippingOptionValid */ "./packages/core/src/app/shipping/isSelectedShippingOptionValid.ts");
+/* harmony import */ var _MultiShippingFormFooter__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./MultiShippingFormFooter */ "./packages/core/src/app/shipping/MultiShippingFormFooter.tsx");
+/* harmony import */ var _MultiShippingForm_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./MultiShippingForm.scss */ "./packages/core/src/app/shipping/MultiShippingForm.scss");
+/* harmony import */ var _MultiShippingForm_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_MultiShippingForm_scss__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _NewConsignment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./NewConsignment */ "./packages/core/src/app/shipping/NewConsignment.tsx");
 
 
 
@@ -1228,25 +1217,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-const MultiShippingForm = ({ defaultCountryCode, isLoading, onUnhandledError, cartHasChanged, }) => {
+const MultiShippingForm = ({ defaultCountryCode, onUnhandledError, cartHasChanged, }) => {
     const [errorConsignmentNumber, setErrorConsignmentNumber] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)();
-    const { checkoutState: { data: { getConsignments, getConfig }, }, } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_1__.useCheckout)();
-    const { unassignedItems: { lineItems: unassignedLineItems, shippableItemsCount }, consignmentList, } = (0,_hooks_useMultishippingConsignmentItems__WEBPACK_IMPORTED_MODULE_10__.useMultiShippingConsignmentItems)();
-    const consignments = getConsignments() || _common_utility__WEBPACK_IMPORTED_MODULE_7__.EMPTY_ARRAY;
-    const config = getConfig();
+    const { consignments, shouldShowOrderComments, shippingQuoteFailedMessage, isLoading } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_9__.useShipping)();
+    const { unassignedItems: { lineItems: unassignedLineItems, shippableItemsCount }, consignmentList, } = (0,_hooks_useMultishippingConsignmentItems__WEBPACK_IMPORTED_MODULE_8__.useMultiShippingConsignmentItems)();
     const [isAddShippingDestination, setIsAddShippingDestination] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(consignments.length === 0);
-    const isEveryConsignmentHasShippingOption = (0,_hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_9__["default"])(consignments);
+    const isEveryConsignmentHasShippingOption = (0,_hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_7__["default"])(consignments);
     const shouldDisableSubmit = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
         return (isLoading ||
             !!unassignedLineItems.length ||
             !isEveryConsignmentHasShippingOption ||
-            !(0,_isSelectedShippingOptionValid__WEBPACK_IMPORTED_MODULE_11__["default"])(consignments));
+            !(0,_isSelectedShippingOptionValid__WEBPACK_IMPORTED_MODULE_10__["default"])(consignments));
     }, [isLoading, consignments]);
-    if (!config) {
-        return null;
-    }
-    const { checkoutSettings: { enableOrderComments: shouldShowOrderComments, shippingQuoteFailedMessage, }, } = config;
     const handleAddShippingDestination = () => {
         if (!isAddShippingDestination && !isEveryConsignmentHasShippingOption) {
             const errorConsignmentIndex = consignments.findIndex((consignment) => !consignment.selectedShippingOption);
@@ -1267,27 +1249,27 @@ const MultiShippingForm = ({ defaultCountryCode, isLoading, onUnhandledError, ca
     const hasUnassignedItems = shippableItemsCount > 0;
     const renderAllocatedBanner = (shippableItemsCount) => {
         if (shippableItemsCount > 0) {
-            return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__["default"], { additionalClassName: "body-regular", type: _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__.AlertType.Info },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__["default"], { data: { count: shippableItemsCount }, id: "shipping.multishipping_item_to_allocate_message" })));
+            return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__["default"], { additionalClassName: "body-regular", type: _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__.AlertType.Info },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__["default"], { data: { count: shippableItemsCount }, id: "shipping.multishipping_item_to_allocate_message" })));
         }
-        return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__["default"], { additionalClassName: "body-regular", type: _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__.AlertType.Success },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__["default"], { id: "shipping.multishipping_all_items_allocated_message" })));
+        return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__["default"], { additionalClassName: "body-regular", type: _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__.AlertType.Success },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__["default"], { id: "shipping.multishipping_all_items_allocated_message" })));
     };
     const resetErrorConsignmentNumber = () => {
         setErrorConsignmentNumber(undefined);
     };
     return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null,
         renderAllocatedBanner(shippableItemsCount),
-        consignmentList.map((consignment) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ConsignmentListItem__WEBPACK_IMPORTED_MODULE_8__["default"], { consignment: consignment, consignmentNumber: consignment.consignmentNumber, defaultCountryCode: defaultCountryCode, isLoading: isLoading, key: consignment.id, onUnhandledError: onUnhandledError, resetErrorConsignmentNumber: resetErrorConsignmentNumber, shippingQuoteFailedMessage: shippingQuoteFailedMessage }))),
-        isAddShippingDestination && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NewConsignment__WEBPACK_IMPORTED_MODULE_14__["default"], { consignmentNumber: consignments.length === 0 ? 1 : consignments.length + 1, defaultCountryCode: defaultCountryCode, isLoading: isLoading, onUnhandledError: onUnhandledError, resetErrorConsignmentNumber: resetErrorConsignmentNumber, setIsAddShippingDestination: setIsAddShippingDestination })),
-        hasUnassignedItems && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_5__["default"], { className: "body-regular add-consignment-button", onClick: handleAddShippingDestination, variant: _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_5__.ButtonVariant.Secondary },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__["default"], { id: "shipping.multishipping_add_new_destination" }))),
+        consignmentList.map((consignment) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ConsignmentListItem__WEBPACK_IMPORTED_MODULE_6__["default"], { consignment: consignment, consignmentNumber: consignment.consignmentNumber, defaultCountryCode: defaultCountryCode, isLoading: isLoading, key: consignment.id, onUnhandledError: onUnhandledError, resetErrorConsignmentNumber: resetErrorConsignmentNumber, shippingQuoteFailedMessage: shippingQuoteFailedMessage }))),
+        isAddShippingDestination && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NewConsignment__WEBPACK_IMPORTED_MODULE_13__["default"], { consignmentNumber: consignments.length === 0 ? 1 : consignments.length + 1, defaultCountryCode: defaultCountryCode, isLoading: isLoading, onUnhandledError: onUnhandledError, resetErrorConsignmentNumber: resetErrorConsignmentNumber, setIsAddShippingDestination: setIsAddShippingDestination })),
+        hasUnassignedItems && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__["default"], { className: "body-regular add-consignment-button", onClick: handleAddShippingDestination, variant: _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__.ButtonVariant.Secondary },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__["default"], { id: "shipping.multishipping_add_new_destination" }))),
         Boolean(errorConsignmentNumber) && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "form-field--error" },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: "form-inlineMessage" },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__["default"], { data: { consignmentNumber: errorConsignmentNumber }, id: "shipping.multishipping_incomplete_consignment_error" })))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_MultiShippingFormFooter__WEBPACK_IMPORTED_MODULE_12__["default"], { cartHasChanged: cartHasChanged, isLoading: isLoading, shouldDisableSubmit: shouldDisableSubmit, shouldShowOrderComments: shouldShowOrderComments })));
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__["default"], { data: { consignmentNumber: errorConsignmentNumber }, id: "shipping.multishipping_incomplete_consignment_error" })))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_MultiShippingFormFooter__WEBPACK_IMPORTED_MODULE_11__["default"], { cartHasChanged: cartHasChanged, isLoading: isLoading, shouldDisableSubmit: shouldDisableSubmit, shouldShowOrderComments: shouldShowOrderComments })));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_3__["default"])((0,_common_form__WEBPACK_IMPORTED_MODULE_6__["default"])({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_2__["default"])((0,_common_form__WEBPACK_IMPORTED_MODULE_5__["default"])({
     handleSubmit: (values, { props: { onSubmit } }) => {
         onSubmit(values);
     },
@@ -1375,18 +1357,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/contexts */ "./packages/contexts/src/checkout/useCheckout.tsx");
-/* harmony import */ var _bigcommerce_checkout_dom_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/dom-utils */ "./packages/dom-utils/src/preventDefault.ts");
-/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/TranslatedString.tsx");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/B2BExtraFieldsSessionStorage.ts");
-/* harmony import */ var _common_error__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../common/error */ "./packages/core/src/app/common/error/isErrorWithType.ts");
-/* harmony import */ var _common_utility__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../common/utility */ "./packages/core/src/app/common/utility/emptyData.ts");
-/* harmony import */ var _AllocateItemsModal__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./AllocateItemsModal */ "./packages/core/src/app/shipping/AllocateItemsModal.tsx");
-/* harmony import */ var _ConsignmentAddressSelector__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ConsignmentAddressSelector */ "./packages/core/src/app/shipping/ConsignmentAddressSelector.tsx");
-/* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./errors */ "./packages/core/src/app/shipping/errors/AssignItemFailedError.ts");
-/* harmony import */ var _hooks_useMultishippingConsignmentItems__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./hooks/useMultishippingConsignmentItems */ "./packages/core/src/app/shipping/hooks/useMultishippingConsignmentItems.ts");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./utils */ "./packages/core/src/app/shipping/utils/setRecommendedOrMissingShippingOption.ts");
-
+/* harmony import */ var _bigcommerce_checkout_dom_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/dom-utils */ "./packages/dom-utils/src/preventDefault.ts");
+/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/TranslatedString.tsx");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../address */ "./packages/core/src/app/address/B2BExtraFieldsSessionStorage.ts");
+/* harmony import */ var _common_error__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common/error */ "./packages/core/src/app/common/error/isErrorWithType.ts");
+/* harmony import */ var _AllocateItemsModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./AllocateItemsModal */ "./packages/core/src/app/shipping/AllocateItemsModal.tsx");
+/* harmony import */ var _ConsignmentAddressSelector__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ConsignmentAddressSelector */ "./packages/core/src/app/shipping/ConsignmentAddressSelector.tsx");
+/* harmony import */ var _errors__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./errors */ "./packages/core/src/app/shipping/errors/AssignItemFailedError.ts");
+/* harmony import */ var _hooks_useMultishippingConsignmentItems__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./hooks/useMultishippingConsignmentItems */ "./packages/core/src/app/shipping/hooks/useMultishippingConsignmentItems.ts");
+/* harmony import */ var _hooks_useShipping__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./hooks/useShipping */ "./packages/core/src/app/shipping/hooks/useShipping.ts");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./utils */ "./packages/core/src/app/shipping/utils/setRecommendedOrMissingShippingOption.ts");
 
 
 
@@ -1403,26 +1383,26 @@ __webpack_require__.r(__webpack_exports__);
 const NewConsignment = ({ consignmentNumber, defaultCountryCode, isLoading, onUnhandledError, resetErrorConsignmentNumber, setIsAddShippingDestination, }) => {
     const [consignmentRequest, setConsignmentRequest] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)();
     const [isOpenAllocateItemsModal, setIsOpenAllocateItemsModal] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
-    const { unassignedItems } = (0,_hooks_useMultishippingConsignmentItems__WEBPACK_IMPORTED_MODULE_12__.useMultiShippingConsignmentItems)();
-    const { checkoutState: { data: { getShippingCountries, getConsignments: getPreviousConsignments }, }, checkoutService: { assignItemsToAddress: assignItem, selectConsignmentShippingOption }, } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_3__.useCheckout)();
+    const { unassignedItems } = (0,_hooks_useMultishippingConsignmentItems__WEBPACK_IMPORTED_MODULE_10__.useMultiShippingConsignmentItems)();
+    const { countries, assignItem, selectConsignmentShippingOption, getConsignments: getPreviousConsignments, } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_11__.useShipping)();
     const selectedAddress = (0,react__WEBPACK_IMPORTED_MODULE_2__.useMemo)(() => {
         if (!(consignmentRequest === null || consignmentRequest === void 0 ? void 0 : consignmentRequest.address)) {
             return undefined;
         }
-        const countries = getShippingCountries() || _common_utility__WEBPACK_IMPORTED_MODULE_8__.EMPTY_ARRAY;
         const country = (0,lodash__WEBPACK_IMPORTED_MODULE_1__.find)(countries, { code: consignmentRequest.address.countryCode });
         return Object.assign(Object.assign({}, consignmentRequest.address), { country: country ? country.name : consignmentRequest.address.countryCode });
-    }, [consignmentRequest]);
+    }, [consignmentRequest, countries]);
     const toggleAllocateItemsModal = () => {
         setIsOpenAllocateItemsModal(!isOpenAllocateItemsModal);
     };
     const handleAllocateItems = (consignmentLineItems) => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
-        var _a, _b;
+        var _a;
         let currentConsignments;
         if (!selectedAddress) {
             return;
         }
-        const previousConsignmentIds = new Set(((_a = getPreviousConsignments()) !== null && _a !== void 0 ? _a : []).map((c) => c.id));
+        const previousConsignments = (_a = getPreviousConsignments()) !== null && _a !== void 0 ? _a : [];
+        const previousConsignmentIds = new Set(previousConsignments.map((c) => c.id));
         try {
             const { data: { getConsignments }, } = yield assignItem({
                 address: selectedAddress,
@@ -1431,14 +1411,14 @@ const NewConsignment = ({ consignmentNumber, defaultCountryCode, isLoading, onUn
             currentConsignments = getConsignments();
             const newConsignment = currentConsignments === null || currentConsignments === void 0 ? void 0 : currentConsignments.find((c) => !previousConsignmentIds.has(c.id));
             if (newConsignment) {
-                _address__WEBPACK_IMPORTED_MODULE_6__.B2BExtraFieldsSessionStorage.reassignConsignmentKey(newConsignment.id);
+                _address__WEBPACK_IMPORTED_MODULE_5__.B2BExtraFieldsSessionStorage.reassignConsignmentKey(newConsignment.id);
             }
         }
         catch (error) {
-            if (error instanceof _errors__WEBPACK_IMPORTED_MODULE_11__["default"]) {
+            if (error instanceof _errors__WEBPACK_IMPORTED_MODULE_9__["default"]) {
                 onUnhandledError(error);
             }
-            if ((0,_common_error__WEBPACK_IMPORTED_MODULE_7__["default"])(error) && error.type === 'empty_cart') {
+            if ((0,_common_error__WEBPACK_IMPORTED_MODULE_6__["default"])(error) && error.type === 'empty_cart') {
                 onUnhandledError(error);
             }
         }
@@ -1447,22 +1427,22 @@ const NewConsignment = ({ consignmentNumber, defaultCountryCode, isLoading, onUn
             setIsAddShippingDestination(false);
             resetErrorConsignmentNumber();
             if (currentConsignments && currentConsignments.length > 0) {
-                yield (0,_utils__WEBPACK_IMPORTED_MODULE_13__.setRecommendedOrMissingShippingOption)((_b = getPreviousConsignments()) !== null && _b !== void 0 ? _b : [], currentConsignments, selectConsignmentShippingOption);
+                yield (0,_utils__WEBPACK_IMPORTED_MODULE_12__.setRecommendedOrMissingShippingOption)(previousConsignments, currentConsignments, selectConsignmentShippingOption);
             }
         }
     });
     return (react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", { className: "consignment-container" },
         react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", { className: "consignment-header sub-header" },
             react__WEBPACK_IMPORTED_MODULE_2___default().createElement("h3", null,
-                react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_5__["default"], { data: { consignmentNumber }, id: "shipping.multishipping_consignment_index_heading" }))),
-        react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_ConsignmentAddressSelector__WEBPACK_IMPORTED_MODULE_10__["default"], { defaultCountryCode: defaultCountryCode, isLoading: isLoading, onUnhandledError: onUnhandledError, selectedAddress: selectedAddress, setConsignmentRequest: setConsignmentRequest }),
+                react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_4__["default"], { data: { consignmentNumber }, id: "shipping.multishipping_consignment_index_heading" }))),
+        react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_ConsignmentAddressSelector__WEBPACK_IMPORTED_MODULE_8__["default"], { defaultCountryCode: defaultCountryCode, isLoading: isLoading, onUnhandledError: onUnhandledError, selectedAddress: selectedAddress, setConsignmentRequest: setConsignmentRequest }),
         selectedAddress && (react__WEBPACK_IMPORTED_MODULE_2___default().createElement((react__WEBPACK_IMPORTED_MODULE_2___default().Fragment), null,
-            react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_AllocateItemsModal__WEBPACK_IMPORTED_MODULE_9__["default"], { address: selectedAddress, consignmentNumber: consignmentNumber, isLoading: isLoading, isOpen: isOpenAllocateItemsModal, onAllocateItems: handleAllocateItems, onRequestClose: toggleAllocateItemsModal, unassignedItems: unassignedItems }),
+            react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_AllocateItemsModal__WEBPACK_IMPORTED_MODULE_7__["default"], { address: selectedAddress, consignmentNumber: consignmentNumber, isLoading: isLoading, isOpen: isOpenAllocateItemsModal, onAllocateItems: handleAllocateItems, onRequestClose: toggleAllocateItemsModal, unassignedItems: unassignedItems }),
             react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", { className: "new-consignment-line-item-header" },
                 react__WEBPACK_IMPORTED_MODULE_2___default().createElement("h3", { className: "body-bold" },
-                    react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_5__["default"], { id: "shipping.multishipping_no_item_allocated_message" })),
-                react__WEBPACK_IMPORTED_MODULE_2___default().createElement("a", { className: "body-cta", "data-test": "allocate-items-button", href: "#", onClick: (0,_bigcommerce_checkout_dom_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(toggleAllocateItemsModal) },
-                    react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_5__["default"], { id: "shipping.multishipping_allocate_items" })))))));
+                    react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_4__["default"], { id: "shipping.multishipping_no_item_allocated_message" })),
+                react__WEBPACK_IMPORTED_MODULE_2___default().createElement("a", { className: "body-cta", "data-test": "allocate-items-button", href: "#", onClick: (0,_bigcommerce_checkout_dom_utils__WEBPACK_IMPORTED_MODULE_3__["default"])(toggleAllocateItemsModal) },
+                    react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_4__["default"], { id: "shipping.multishipping_allocate_items" })))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewConsignment);
 
@@ -1870,7 +1850,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ShippingForm = ({ cartHasChanged, isBillingSameAsShipping, isMultiShippingMode, onMultiShippingSubmit, onSingleShippingSubmit, onUnhandledError, isInitialValueLoaded, setIsMultishippingMode, }) => {
-    const { cart, consignments, countries, customerMessage, defaultShippingExpectationMessage, deleteConsignments, deinitializeShippingMethod: deinitialize, getFields, hasMultiShippingEnabled, isLoading, initializeShippingMethod: initialize, isShippingStepPending, isNoCountriesErrorOnCheckoutEnabled, methodId, shouldShowOrderComments, shippingAddress, validateMaxLength, updateShippingAddress: updateAddress, } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_4__.useShipping)();
+    const { cart, consignments, countries, customerMessage, getFields, hasMultiShippingEnabled, isNoCountriesErrorOnCheckoutEnabled, methodId, shippingAddress, validateMaxLength, } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_4__.useShipping)();
     const { extensionState: { shippingFormRenderTimestamp }, } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_1__.useExtensions)();
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
         if (shippingFormRenderTimestamp) {
@@ -1891,12 +1871,12 @@ const ShippingForm = ({ cartHasChanged, isBillingSameAsShipping, isMultiShipping
         }
     }, [isInitialValueLoaded, countries.length]);
     const getMultiShippingForm = () => {
-        return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_MultiShippingForm__WEBPACK_IMPORTED_MODULE_6__["default"], { cartHasChanged: cartHasChanged, customerMessage: customerMessage, defaultCountryCode: shippingAddress === null || shippingAddress === void 0 ? void 0 : shippingAddress.countryCode, isLoading: isLoading, onSubmit: onMultiShippingSubmit, onUnhandledError: onUnhandledError }));
+        return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_MultiShippingForm__WEBPACK_IMPORTED_MODULE_6__["default"], { cartHasChanged: cartHasChanged, customerMessage: customerMessage, defaultCountryCode: shippingAddress === null || shippingAddress === void 0 ? void 0 : shippingAddress.countryCode, onSubmit: onMultiShippingSubmit, onUnhandledError: onUnhandledError }));
     };
     if (isInitialValueLoaded && countries.length === 0 && isNoCountriesErrorOnCheckoutEnabled) {
         return null;
     }
-    return isMultiShippingMode ? (getMultiShippingForm()) : (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SingleShippingForm__WEBPACK_IMPORTED_MODULE_7__["default"], { cartHasChanged: cartHasChanged, consignments: consignments, customerMessage: customerMessage, defaultShippingExpectationMessage: defaultShippingExpectationMessage, deinitialize: deinitialize, deleteConsignments: deleteConsignments, getFields: getFields, initialize: initialize, isBillingSameAsShipping: isBillingSameAsShipping, isInitialValueLoaded: isInitialValueLoaded, isLoading: isLoading, isShippingStepPending: isShippingStepPending, methodId: methodId, onSubmit: onSingleShippingSubmit, onUnhandledError: onUnhandledError, shippingAddress: shippingAddress, shippingFormRenderTimestamp: shippingFormRenderTimestamp, shouldShowOrderComments: shouldShowOrderComments, updateAddress: updateAddress, validateMaxLength: validateMaxLength }));
+    return isMultiShippingMode ? (getMultiShippingForm()) : (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SingleShippingForm__WEBPACK_IMPORTED_MODULE_7__["default"], { cartHasChanged: cartHasChanged, customerMessage: customerMessage, getFields: getFields, isBillingSameAsShipping: isBillingSameAsShipping, isInitialValueLoaded: isInitialValueLoaded, methodId: methodId, onSubmit: onSingleShippingSubmit, onUnhandledError: onUnhandledError, shippingAddress: shippingAddress, shippingFormRenderTimestamp: shippingFormRenderTimestamp, validateMaxLength: validateMaxLength }));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ShippingForm);
 
@@ -2050,10 +2030,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _payment_paymentMethod__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../payment/paymentMethod */ "./packages/core/src/app/payment/paymentMethod/PaymentMethodId.ts");
 /* harmony import */ var _BillingSameAsShippingField__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./BillingSameAsShippingField */ "./packages/core/src/app/shipping/BillingSameAsShippingField.tsx");
 /* harmony import */ var _hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./hasSelectedShippingOptions */ "./packages/core/src/app/shipping/hasSelectedShippingOptions.ts");
-/* harmony import */ var _isSelectedShippingOptionValid__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./isSelectedShippingOptionValid */ "./packages/core/src/app/shipping/isSelectedShippingOptionValid.ts");
-/* harmony import */ var _ShippingAddress__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./ShippingAddress */ "./packages/core/src/app/shipping/ShippingAddress.tsx");
-/* harmony import */ var _ShippingAddressFields__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./ShippingAddressFields */ "./packages/core/src/app/shipping/ShippingAddressFields.ts");
-/* harmony import */ var _ShippingFormFooter__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./ShippingFormFooter */ "./packages/core/src/app/shipping/ShippingFormFooter.tsx");
+/* harmony import */ var _hooks_useShipping__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./hooks/useShipping */ "./packages/core/src/app/shipping/hooks/useShipping.ts");
+/* harmony import */ var _isSelectedShippingOptionValid__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./isSelectedShippingOptionValid */ "./packages/core/src/app/shipping/isSelectedShippingOptionValid.ts");
+/* harmony import */ var _ShippingAddress__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./ShippingAddress */ "./packages/core/src/app/shipping/ShippingAddress.tsx");
+/* harmony import */ var _ShippingAddressFields__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./ShippingAddressFields */ "./packages/core/src/app/shipping/ShippingAddressFields.ts");
+/* harmony import */ var _ShippingFormFooter__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./ShippingFormFooter */ "./packages/core/src/app/shipping/ShippingFormFooter.tsx");
+
 
 
 
@@ -2081,9 +2063,10 @@ function shouldHaveCustomValidation(methodId) {
 }
 const SHIPPING_AUTOSAVE_DELAY = 1700;
 const PAYMENT_METHOD_VALID = ['amazonpay'];
-const SingleShippingForm = ({ cartHasChanged, consignments, customerMessage, deinitialize, deleteConsignments, getFields, initialize, isBillingSameAsShipping, isInitialValueLoaded, isLoading, isShippingStepPending, isValid, methodId, onUnhandledError = lodash__WEBPACK_IMPORTED_MODULE_1__.noop, setFieldValue, setValues, shippingAddress, shippingAutosaveDelay = SHIPPING_AUTOSAVE_DELAY, shippingFormRenderTimestamp, validateMaxLength, defaultShippingExpectationMessage, shouldShowOrderComments, updateAddress, values, }) => {
+const SingleShippingForm = ({ cartHasChanged, customerMessage, getFields, isBillingSameAsShipping, isInitialValueLoaded, isValid, methodId, onUnhandledError = lodash__WEBPACK_IMPORTED_MODULE_1__.noop, setFieldValue, setValues, shippingAddress, shippingAutosaveDelay = SHIPPING_AUTOSAVE_DELAY, shippingFormRenderTimestamp, validateMaxLength, values, }) => {
     var _a, _b, _c, _d;
     const { shipping: { hideBillingSameAsShippingCheck }, } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_4__.useCapabilities)();
+    const { consignments, deinitializeShippingMethod: deinitialize, deleteConsignments, initializeShippingMethod: initialize, isLoading, isShippingStepPending, defaultShippingExpectationMessage, shouldShowOrderComments, updateShippingAddress: updateAddress, } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_20__.useShipping)();
     const propsRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)({ values, shippingAddress, isValid });
     const debouncedUpdateAddressRef = (0,react__WEBPACK_IMPORTED_MODULE_2__.useRef)(undefined);
     propsRef.current = { values, shippingAddress, isValid };
@@ -2177,7 +2160,7 @@ const SingleShippingForm = ({ cartHasChanged, consignments, customerMessage, dei
         if (!propsRef.current.isValid) {
             return;
         }
-        const isShippingField = _ShippingAddressFields__WEBPACK_IMPORTED_MODULE_22__.SHIPPING_ADDRESS_FIELDS.includes(name);
+        const isShippingField = _ShippingAddressFields__WEBPACK_IMPORTED_MODULE_23__.SHIPPING_ADDRESS_FIELDS.includes(name);
         updateAddressWithFormData(isShippingField || !hasRequestedShippingOptions);
     });
     const handleAddressSelect = (address) => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
@@ -2213,16 +2196,16 @@ const SingleShippingForm = ({ cartHasChanged, consignments, customerMessage, dei
         return (isLoading ||
             isUpdatingShippingData ||
             !(0,_hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_19__["default"])(consignments) ||
-            !(0,_isSelectedShippingOptionValid__WEBPACK_IMPORTED_MODULE_20__["default"])(consignments));
+            !(0,_isSelectedShippingOptionValid__WEBPACK_IMPORTED_MODULE_21__["default"])(consignments));
     };
     const shouldShowBillingSameAsShipping = !hideBillingSameAsShippingCheck &&
         !PAYMENT_METHOD_VALID.some((method) => method === methodId);
     return (react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_6__["default"], { autoComplete: "on" },
         react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_7__["default"], null,
-            react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_ShippingAddress__WEBPACK_IMPORTED_MODULE_21__["default"], { consignments: consignments, deinitialize: deinitialize, formFields: getFields((_d = values.shippingAddress) === null || _d === void 0 ? void 0 : _d.countryCode), hasRequestedShippingOptions: hasRequestedShippingOptions, initialize: initialize, isLoading: isResettingAddress, isShippingStepPending: isShippingStepPending, methodId: methodId, onAddressSelect: handleAddressSelect, onFieldChange: handleFieldChange, onUnhandledError: onUnhandledError, onUseNewAddress: handleUseNewAddress, shippingAddress: shippingAddress, validateMaxLength: validateMaxLength }),
+            react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_ShippingAddress__WEBPACK_IMPORTED_MODULE_22__["default"], { consignments: consignments, deinitialize: deinitialize, formFields: getFields((_d = values.shippingAddress) === null || _d === void 0 ? void 0 : _d.countryCode), hasRequestedShippingOptions: hasRequestedShippingOptions, initialize: initialize, isLoading: isResettingAddress, isShippingStepPending: isShippingStepPending, methodId: methodId, onAddressSelect: handleAddressSelect, onFieldChange: handleFieldChange, onUnhandledError: onUnhandledError, onUseNewAddress: handleUseNewAddress, shippingAddress: shippingAddress, validateMaxLength: validateMaxLength }),
             shouldShowBillingSameAsShipping && (react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", { className: "form-body" },
                 react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_BillingSameAsShippingField__WEBPACK_IMPORTED_MODULE_18__["default"], null)))),
-        react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_ShippingFormFooter__WEBPACK_IMPORTED_MODULE_23__["default"], { cartHasChanged: cartHasChanged, defaultShippingExpectationMessage: defaultShippingExpectationMessage, isInitialValueLoaded: isInitialValueLoaded, isLoading: isLoading || isUpdatingShippingData, isMultiShippingMode: false, shippingFormRenderTimestamp: shippingFormRenderTimestamp, shouldDisableSubmit: shouldDisableSubmit(), shouldShowOrderComments: shouldShowOrderComments, shouldShowShippingOptions: isValid })));
+        react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_ShippingFormFooter__WEBPACK_IMPORTED_MODULE_24__["default"], { cartHasChanged: cartHasChanged, defaultShippingExpectationMessage: defaultShippingExpectationMessage, isInitialValueLoaded: isInitialValueLoaded, isLoading: isLoading || isUpdatingShippingData, isMultiShippingMode: false, shippingFormRenderTimestamp: shippingFormRenderTimestamp, shouldDisableSubmit: shouldDisableSubmit(), shouldShowOrderComments: shouldShowOrderComments, shouldShowShippingOptions: isValid })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_5__["default"])((0,_common_form__WEBPACK_IMPORTED_MODULE_14__["default"])({
     handleSubmit: (values, { props: { onSubmit } }) => {
@@ -2790,13 +2773,13 @@ const useShipping = () => {
     const { data: { getCart, getCheckout, getConfig, getCustomer, getConsignments, getShippingAddress, getBillingAddress, getShippingAddressFields, getShippingCountries, getAddressExtraFields, }, statuses: { isShippingStepPending, isSelectingShippingOption, isLoadingShippingOptions, isUpdatingConsignment, isCreatingConsignments, isCreatingCustomerAddress, isLoadingShippingCountries, isUpdatingBillingAddress, isUpdatingCheckout, isDeletingConsignment, isLoadingCheckout, }, } = checkoutState;
     const checkout = getCheckout();
     const config = getConfig();
-    const consignments = getConsignments() || [];
+    const consignments = getConsignments() || _common_utility__WEBPACK_IMPORTED_MODULE_7__.EMPTY_ARRAY;
     const customer = getCustomer();
     const cart = getCart();
     if (!checkout || !config || !customer || !cart) {
         throw new Error('Unable to access checkout data');
     }
-    const { checkoutSettings: { enableOrderComments, hasMultiShippingEnabled }, } = config;
+    const { checkoutSettings: { enableOrderComments, hasMultiShippingEnabled, shippingQuoteFailedMessage, }, } = config;
     const methodId = (0,_getShippingMethodId__WEBPACK_IMPORTED_MODULE_12__["default"])(checkout, config);
     const isLoading = isLoadingShippingOptions() ||
         isSelectingShippingOption() ||
@@ -2857,11 +2840,15 @@ const useShipping = () => {
         shippingAddress,
         shouldShowMultiShipping,
         shouldShowOrderComments: enableOrderComments,
+        shippingQuoteFailedMessage,
+        selectConsignmentShippingOption: checkoutService.selectConsignmentShippingOption,
         signOut: checkoutService.signOutCustomer,
         unassignItem: checkoutService.unassignItemsToAddress,
         updateBillingAddress: checkoutService.updateBillingAddress,
         updateCheckout: checkoutService.updateCheckout,
         updateShippingAddress: checkoutService.updateShippingAddress,
+        updateConsignment: checkoutService.updateConsignment,
+        getConsignments,
         shouldRenderStripeForm: providerWithCustomCheckout === _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_6__["default"].StripeUPE &&
             (0,_bigcommerce_checkout_instrument_utils__WEBPACK_IMPORTED_MODULE_5__["default"])(cart),
         validateMaxLength: (0,_common_utility__WEBPACK_IMPORTED_MODULE_8__["default"])(config.checkoutSettings, 'CHECKOUT-9768.form_fields_max_length_validation', false),
@@ -3313,7 +3300,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const StripeShipping = ({ cartHasChanged, isBillingSameAsShipping, isInitialValueLoaded, isMultiShippingMode, step, onSubmit, onMultiShippingChange, onUnhandledError, isLoading, }) => {
-    const { customerMessage, getFields, isLoading: isShippingMethodLoading, methodId, updateShippingAddress: updateAddress, shippingAddress, shouldShowMultiShipping, shouldShowOrderComments, } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_2__.useShipping)();
+    const { customerMessage, getFields, methodId, shippingAddress, shouldShowMultiShipping } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_2__.useShipping)();
     const [isStripeLoading, setIsStripeLoading] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
     const [isStripeAutoStep, setIsStripeAutoStep] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
     const stripeLoadedCallback = () => {
@@ -3326,7 +3313,7 @@ const StripeShipping = ({ cartHasChanged, isBillingSameAsShipping, isInitialValu
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_1__["default"], { isLoading: isStripeAutoStep || isStripeLoading }),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "checkout-form", style: { display: isStripeAutoStep || isStripeLoading ? 'none' : undefined } },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ShippingHeader__WEBPACK_IMPORTED_MODULE_3__["default"], { isMultiShippingMode: isMultiShippingMode, onMultiShippingChange: onMultiShippingChange, shouldShowMultiShipping: shouldShowMultiShipping }),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StripeShippingForm__WEBPACK_IMPORTED_MODULE_4__["default"], { cartHasChanged: cartHasChanged, customerMessage: customerMessage, getFields: getFields, isBillingSameAsShipping: isBillingSameAsShipping, isInitialValueLoaded: isInitialValueLoaded, isLoading: isLoading, isMultiShippingMode: isMultiShippingMode, isShippingMethodLoading: isShippingMethodLoading, isStripeAutoStep: handleIsAutoStep, isStripeLoading: stripeLoadedCallback, methodId: methodId, onSubmit: onSubmit, onUnhandledError: onUnhandledError, shippingAddress: shippingAddress, shouldShowOrderComments: shouldShowOrderComments, step: step, updateAddress: updateAddress }))));
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_StripeShippingForm__WEBPACK_IMPORTED_MODULE_4__["default"], { cartHasChanged: cartHasChanged, customerMessage: customerMessage, getFields: getFields, isBillingSameAsShipping: isBillingSameAsShipping, isInitialValueLoaded: isInitialValueLoaded, isLoading: isLoading, isMultiShippingMode: isMultiShippingMode, isStripeAutoStep: handleIsAutoStep, isStripeLoading: stripeLoadedCallback, methodId: methodId, onSubmit: onSubmit, onUnhandledError: onUnhandledError, shippingAddress: shippingAddress, step: step }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StripeShipping);
 
@@ -3603,19 +3590,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
 /* harmony import */ var _bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/contexts */ "./packages/contexts/src/capabilities/CapabilitiesContext.tsx");
-/* harmony import */ var _bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bigcommerce/checkout/contexts */ "./packages/contexts/src/checkout/useCheckout.tsx");
-/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/withLanguage.tsx");
-/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/form/Form/Form.tsx");
-/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/form/Fieldset/Fieldset.tsx");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../address */ "./packages/core/src/app/address/mapAddressToFormValues.ts");
-/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../address */ "./packages/core/src/app/address/getAddressFormFieldsValidationSchema.ts");
-/* harmony import */ var _common_form__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../common/form */ "./packages/core/src/app/common/form/withFormikExtended.tsx");
-/* harmony import */ var _common_utility__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../common/utility */ "./packages/core/src/app/common/utility/emptyData.ts");
-/* harmony import */ var _formFields__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../formFields */ "./packages/core/src/app/formFields/getCustomFormFieldsValidationSchema.ts");
-/* harmony import */ var _BillingSameAsShippingField__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../BillingSameAsShippingField */ "./packages/core/src/app/shipping/BillingSameAsShippingField.tsx");
-/* harmony import */ var _hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../hasSelectedShippingOptions */ "./packages/core/src/app/shipping/hasSelectedShippingOptions.ts");
-/* harmony import */ var _ShippingFormFooter__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../ShippingFormFooter */ "./packages/core/src/app/shipping/ShippingFormFooter.tsx");
-/* harmony import */ var _StripeShippingAddress__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./StripeShippingAddress */ "./packages/core/src/app/shipping/stripeUPE/StripeShippingAddress.tsx");
+/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/withLanguage.tsx");
+/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/form/Form/Form.tsx");
+/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/form/Fieldset/Fieldset.tsx");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../address */ "./packages/core/src/app/address/mapAddressToFormValues.ts");
+/* harmony import */ var _address__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../address */ "./packages/core/src/app/address/getAddressFormFieldsValidationSchema.ts");
+/* harmony import */ var _common_form__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../common/form */ "./packages/core/src/app/common/form/withFormikExtended.tsx");
+/* harmony import */ var _formFields__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../formFields */ "./packages/core/src/app/formFields/getCustomFormFieldsValidationSchema.ts");
+/* harmony import */ var _BillingSameAsShippingField__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../BillingSameAsShippingField */ "./packages/core/src/app/shipping/BillingSameAsShippingField.tsx");
+/* harmony import */ var _hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../hasSelectedShippingOptions */ "./packages/core/src/app/shipping/hasSelectedShippingOptions.ts");
+/* harmony import */ var _hooks_useShipping__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../hooks/useShipping */ "./packages/core/src/app/shipping/hooks/useShipping.ts");
+/* harmony import */ var _ShippingFormFooter__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../ShippingFormFooter */ "./packages/core/src/app/shipping/ShippingFormFooter.tsx");
+/* harmony import */ var _StripeShippingAddress__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./StripeShippingAddress */ "./packages/core/src/app/shipping/stripeUPE/StripeShippingAddress.tsx");
 
 
 
@@ -3632,59 +3618,54 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const StripeShippingForm = (props) => {
-    const { checkoutService, checkoutState } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_5__.useCheckout)();
     const { shipping: { hideBillingSameAsShippingCheck }, } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_4__.useCapabilities)();
-    const { data: { getConsignments, getShippingCountries }, } = checkoutState;
-    const consignments = getConsignments() || [];
-    const initialize = checkoutService.initializeShipping;
-    const deinitialize = checkoutService.deinitializeShipping;
-    const countries = getShippingCountries() || _common_utility__WEBPACK_IMPORTED_MODULE_12__.EMPTY_ARRAY;
+    const { consignments, countries, initializeShippingMethod: initialize, deinitializeShippingMethod: deinitialize, isLoading: isShippingMethodLoading, shouldShowOrderComments, updateShippingAddress: updateAddress, } = (0,_hooks_useShipping__WEBPACK_IMPORTED_MODULE_14__.useShipping)();
     const [isUpdatingShippingData] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
-    const { cartHasChanged, isInitialValueLoaded, isLoading, isStripeLoading, shippingAddress, shouldShowOrderComments, isValid, onSubmit, isStripeAutoStep, step, isShippingMethodLoading, updateAddress, onUnhandledError = lodash__WEBPACK_IMPORTED_MODULE_1__.noop, values, setValues, getFields, } = props;
+    const { cartHasChanged, isInitialValueLoaded, isLoading, isStripeLoading, shippingAddress, isValid, onSubmit, isStripeAutoStep, step, onUnhandledError = lodash__WEBPACK_IMPORTED_MODULE_1__.noop, values, setValues, getFields, } = props;
     const shouldDisableSubmit = () => {
         if (!isValid) {
             return false;
         }
-        return isLoading || isUpdatingShippingData || !(0,_hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_15__["default"])(consignments);
+        return isLoading || isUpdatingShippingData || !(0,_hasSelectedShippingOptions__WEBPACK_IMPORTED_MODULE_13__["default"])(consignments);
     };
     const handleAddressSelect = (0,react__WEBPACK_IMPORTED_MODULE_2__.useCallback)((address) => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
         try {
             yield updateAddress(address);
-            setValues(Object.assign(Object.assign({}, values), { shippingAddress: (0,_address__WEBPACK_IMPORTED_MODULE_9__["default"])(getFields(address.countryCode), address) }));
+            setValues(Object.assign(Object.assign({}, values), { shippingAddress: (0,_address__WEBPACK_IMPORTED_MODULE_8__["default"])(getFields(address.countryCode), address) }));
         }
         catch (error) {
             onUnhandledError(error);
         }
     }), [values, setValues, onUnhandledError]);
-    return (react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_7__["default"], { autoComplete: "on" },
-        react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_8__["default"], null,
-            react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_StripeShippingAddress__WEBPACK_IMPORTED_MODULE_17__["default"], { consignments: consignments, countries: countries, deinitialize: deinitialize, initialize: initialize, isShippingMethodLoading: isShippingMethodLoading, isStripeAutoStep: isStripeAutoStep, isStripeLoading: isStripeLoading, onAddressSelect: handleAddressSelect, onSubmit: onSubmit, shippingAddress: shippingAddress, shouldDisableSubmit: shouldDisableSubmit(), step: step }),
-            react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", { className: "form-body" }, !hideBillingSameAsShippingCheck && react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_BillingSameAsShippingField__WEBPACK_IMPORTED_MODULE_14__["default"], null))),
-        react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_ShippingFormFooter__WEBPACK_IMPORTED_MODULE_16__["default"], { cartHasChanged: cartHasChanged, isInitialValueLoaded: isInitialValueLoaded, isLoading: isLoading || isUpdatingShippingData, isMultiShippingMode: false, shouldDisableSubmit: shouldDisableSubmit(), shouldShowOrderComments: shouldShowOrderComments, shouldShowShippingOptions: isValid })));
+    return (react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_6__["default"], { autoComplete: "on" },
+        react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_7__["default"], null,
+            react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_StripeShippingAddress__WEBPACK_IMPORTED_MODULE_16__["default"], { consignments: consignments, countries: countries, deinitialize: deinitialize, initialize: initialize, isShippingMethodLoading: isShippingMethodLoading, isStripeAutoStep: isStripeAutoStep, isStripeLoading: isStripeLoading, onAddressSelect: handleAddressSelect, onSubmit: onSubmit, shippingAddress: shippingAddress, shouldDisableSubmit: shouldDisableSubmit(), step: step }),
+            react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", { className: "form-body" }, !hideBillingSameAsShippingCheck && react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_BillingSameAsShippingField__WEBPACK_IMPORTED_MODULE_12__["default"], null))),
+        react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_ShippingFormFooter__WEBPACK_IMPORTED_MODULE_15__["default"], { cartHasChanged: cartHasChanged, isInitialValueLoaded: isInitialValueLoaded, isLoading: isLoading || isUpdatingShippingData, isMultiShippingMode: false, shouldDisableSubmit: shouldDisableSubmit(), shouldShowOrderComments: shouldShowOrderComments, shouldShowShippingOptions: isValid })));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_6__["default"])((0,_common_form__WEBPACK_IMPORTED_MODULE_11__["default"])({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_5__["default"])((0,_common_form__WEBPACK_IMPORTED_MODULE_10__["default"])({
     handleSubmit: (values, { props: { onSubmit } }) => {
         onSubmit(values);
     },
     mapPropsToValues: ({ getFields, shippingAddress, isBillingSameAsShipping, customerMessage, }) => ({
         billingSameAsShipping: isBillingSameAsShipping,
         orderComment: customerMessage,
-        shippingAddress: (0,_address__WEBPACK_IMPORTED_MODULE_9__["default"])(getFields(shippingAddress && shippingAddress.countryCode), shippingAddress),
+        shippingAddress: (0,_address__WEBPACK_IMPORTED_MODULE_8__["default"])(getFields(shippingAddress && shippingAddress.countryCode), shippingAddress),
     }),
     isInitialValid: ({ shippingAddress, getFields, language }) => !!shippingAddress &&
-        (0,_address__WEBPACK_IMPORTED_MODULE_10__["default"])({
+        (0,_address__WEBPACK_IMPORTED_MODULE_9__["default"])({
             language,
             formFields: getFields(shippingAddress.countryCode),
         }).isValidSync(shippingAddress),
     validationSchema: ({ language, getFields, methodId, }) => methodId
         ? (0,yup__WEBPACK_IMPORTED_MODULE_3__.object)({
-            shippingAddress: (0,yup__WEBPACK_IMPORTED_MODULE_3__.lazy)((formValues) => (0,_formFields__WEBPACK_IMPORTED_MODULE_13__["default"])({
-                translate: (0,_address__WEBPACK_IMPORTED_MODULE_10__.getTranslateAddressError)(getFields(formValues && formValues.countryCode), language),
+            shippingAddress: (0,yup__WEBPACK_IMPORTED_MODULE_3__.lazy)((formValues) => (0,_formFields__WEBPACK_IMPORTED_MODULE_11__["default"])({
+                translate: (0,_address__WEBPACK_IMPORTED_MODULE_9__.getTranslateAddressError)(getFields(formValues && formValues.countryCode), language),
                 formFields: getFields(formValues && formValues.countryCode),
             })),
         })
         : (0,yup__WEBPACK_IMPORTED_MODULE_3__.object)({
-            shippingAddress: (0,yup__WEBPACK_IMPORTED_MODULE_3__.lazy)((formValues) => (0,_address__WEBPACK_IMPORTED_MODULE_10__["default"])({
+            shippingAddress: (0,yup__WEBPACK_IMPORTED_MODULE_3__.lazy)((formValues) => (0,_address__WEBPACK_IMPORTED_MODULE_9__["default"])({
                 language,
                 formFields: getFields(formValues && formValues.countryCode),
             })),
