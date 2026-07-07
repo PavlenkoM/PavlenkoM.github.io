@@ -1,36 +1,20 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (self["webpackJsonpCheckout"] = self["webpackJsonpCheckout"] || []).push([["cheque-payment-method"],{
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./packages/cheque-payment-integration/src/PoNumber.scss"
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./packages/cheque-payment-integration/src/PoNumber.scss"
 /*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./packages/cheque-payment-integration/src/PoNumber.scss ***!
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./packages/cheque-payment-integration/src/PoNumber.scss ***!
   \************************************************************************************************************************************************************************/
 (module, exports, __webpack_require__) {
 
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.id, ".po-number-container {\n  box-sizing: border-box;\n  padding-bottom: 1rem;\n}\n.po-number-container .po-number-label {\n  display: block;\n  font-size: 1rem;\n  font-weight: normal;\n  margin-bottom: 1rem;\n}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ },
-
-/***/ "../checkout-sdk-js/dist/esm/integrations/offline.js"
-/*!***********************************************************!*\
-  !*** ../checkout-sdk-js/dist/esm/integrations/offline.js ***!
-  \***********************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   createOfflinePaymentStrategy: () => (/* binding */ n)
-/* harmony export */ });
-class e extends Error{constructor(e){var t;super(e||"An unexpected error has occurred."),this.name="StandardError",this.type="standard",t=new.target.prototype,Object.setPrototypeOf?Object.setPrototypeOf(this,t):this.__proto__=t,"function"==typeof Error.captureStackTrace?Error.captureStackTrace(this,new.target):this.stack=new Error(this.message).stack}}class t extends e{constructor(){super("The current order does not need to be finalized at this stage."),this.name="OrderFinalizationNotRequiredError",this.type="order_finalization_not_required"}}class r{constructor(e){this._paymentIntegrationService=e}execute(e,t){return r=this,n=void 0,i=function*(){return yield this._paymentIntegrationService.submitOrder(Object.assign(Object.assign({},e),{payment:e.payment?{methodId:e.payment.methodId}:void 0}),t),Promise.resolve()},new((o=void 0)||(o=Promise))(function(e,t){function s(e){try{c(i.next(e))}catch(e){t(e)}}function a(e){try{c(i.throw(e))}catch(e){t(e)}}function c(t){var r;t.done?e(t.value):(r=t.value,r instanceof o?r:new o(function(e){e(r)})).then(s,a)}c((i=i.apply(r,n||[])).next())});// removed by dead control flow
- var r, n, o, i; }finalize(){return Promise.reject(new t)}initialize(){return Promise.resolve()}deinitialize(){return Promise.resolve()}}const n=(o=e=>new r(e),i=[{type:"PAYMENT_TYPE_OFFLINE"}],Object.assign(o,{resolveIds:i}));var o,i;
-
+eval("{// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.id, \".po-number-container {\\n  box-sizing: border-box;\\n  padding-bottom: 1rem;\\n}\\n.po-number-container .po-number-label {\\n  display: block;\\n  font-size: 1rem;\\n  font-weight: normal;\\n  margin-bottom: 1rem;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L2Nqcy5qcyEuL25vZGVfbW9kdWxlcy9zYXNzLWxvYWRlci9kaXN0L2Nqcy5qcz8/cnVsZVNldFsxXS5ydWxlc1s0XS51c2VbMl0hLi9wYWNrYWdlcy9jaGVxdWUtcGF5bWVudC1pbnRlZ3JhdGlvbi9zcmMvUG9OdW1iZXIuc2NzcyIsIm1hcHBpbmdzIjoiQUFBQTtBQUNBLGtDQUFrQyxtQkFBTyxDQUFDLDJHQUFzRDtBQUNoRztBQUNBO0FBQ0EsZ0RBQWdELDJCQUEyQix5QkFBeUIsR0FBRyx5Q0FBeUMsbUJBQW1CLG9CQUFvQix3QkFBd0Isd0JBQXdCLEdBQUc7QUFDMU87QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovL2NoZWNrb3V0Ly4vcGFja2FnZXMvY2hlcXVlLXBheW1lbnQtaW50ZWdyYXRpb24vc3JjL1BvTnVtYmVyLnNjc3M/YzU4MiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBJbXBvcnRzXG52YXIgX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fID0gcmVxdWlyZShcIi4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvcnVudGltZS9hcGkuanNcIik7XG5leHBvcnRzID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKGZhbHNlKTtcbi8vIE1vZHVsZVxuZXhwb3J0cy5wdXNoKFttb2R1bGUuaWQsIFwiLnBvLW51bWJlci1jb250YWluZXIge1xcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcXG4gIHBhZGRpbmctYm90dG9tOiAxcmVtO1xcbn1cXG4ucG8tbnVtYmVyLWNvbnRhaW5lciAucG8tbnVtYmVyLWxhYmVsIHtcXG4gIGRpc3BsYXk6IGJsb2NrO1xcbiAgZm9udC1zaXplOiAxcmVtO1xcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcXG4gIG1hcmdpbi1ib3R0b206IDFyZW07XFxufVwiLCBcIlwiXSk7XG4vLyBFeHBvcnRzXG5tb2R1bGUuZXhwb3J0cyA9IGV4cG9ydHM7XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./packages/cheque-payment-integration/src/PoNumber.scss\n\n}");
 
 /***/ },
 
@@ -40,27 +24,7 @@ class e extends Error{constructor(e){var t;super(e||"An unexpected error has occ
   \***************************************************************/
 (module, __unused_webpack_exports, __webpack_require__) {
 
-
-var content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./PoNumber.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./packages/cheque-payment-integration/src/PoNumber.scss");
-
-if(typeof content === 'string') content = [[module.id, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! !../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) // removed by dead control flow
-{}
+eval("{\nvar content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./PoNumber.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./packages/cheque-payment-integration/src/PoNumber.scss\");\n\nif(typeof content === 'string') content = [[module.id, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! !../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) // removed by dead control flow\n{}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9jaGVxdWUtcGF5bWVudC1pbnRlZ3JhdGlvbi9zcmMvUG9OdW1iZXIuc2NzcyIsIm1hcHBpbmdzIjoiO0FBQ0EsY0FBYyxtQkFBTyxDQUFDLGtUQUEwSTs7QUFFaEs7O0FBRUE7QUFDQTs7OztBQUlBLGVBQWU7O0FBRWY7QUFDQTs7QUFFQSxhQUFhLG1CQUFPLENBQUMsMEdBQXNEOztBQUUzRTs7QUFFQSxHQUFHLEtBQVUsRUFBRTtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2hlY2tvdXQvLi9wYWNrYWdlcy9jaGVxdWUtcGF5bWVudC1pbnRlZ3JhdGlvbi9zcmMvUG9OdW1iZXIuc2Nzcz9iMTA5Il0sInNvdXJjZXNDb250ZW50IjpbIlxudmFyIGNvbnRlbnQgPSByZXF1aXJlKFwiISEuLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L2Nqcy5qcyEuLi8uLi8uLi9ub2RlX21vZHVsZXMvc2Fzcy1sb2FkZXIvZGlzdC9janMuanM/P3J1bGVTZXRbMV0ucnVsZXNbNF0udXNlWzJdIS4vUG9OdW1iZXIuc2Nzc1wiKTtcblxuaWYodHlwZW9mIGNvbnRlbnQgPT09ICdzdHJpbmcnKSBjb250ZW50ID0gW1ttb2R1bGUuaWQsIGNvbnRlbnQsICcnXV07XG5cbnZhciB0cmFuc2Zvcm07XG52YXIgaW5zZXJ0SW50bztcblxuXG5cbnZhciBvcHRpb25zID0ge1wiaG1yXCI6dHJ1ZX1cblxub3B0aW9ucy50cmFuc2Zvcm0gPSB0cmFuc2Zvcm1cbm9wdGlvbnMuaW5zZXJ0SW50byA9IHVuZGVmaW5lZDtcblxudmFyIHVwZGF0ZSA9IHJlcXVpcmUoXCIhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3N0eWxlLWxvYWRlci9saWIvYWRkU3R5bGVzLmpzXCIpKGNvbnRlbnQsIG9wdGlvbnMpO1xuXG5pZihjb250ZW50LmxvY2FscykgbW9kdWxlLmV4cG9ydHMgPSBjb250ZW50LmxvY2FscztcblxuaWYobW9kdWxlLmhvdCkge1xuXHRtb2R1bGUuaG90LmFjY2VwdChcIiEhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2Nzcy1sb2FkZXIvZGlzdC9janMuanMhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Nhc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9ydWxlU2V0WzFdLnJ1bGVzWzRdLnVzZVsyXSEuL1BvTnVtYmVyLnNjc3NcIiwgZnVuY3Rpb24oKSB7XG5cdFx0dmFyIG5ld0NvbnRlbnQgPSByZXF1aXJlKFwiISEuLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L2Nqcy5qcyEuLi8uLi8uLi9ub2RlX21vZHVsZXMvc2Fzcy1sb2FkZXIvZGlzdC9janMuanM/P3J1bGVTZXRbMV0ucnVsZXNbNF0udXNlWzJdIS4vUG9OdW1iZXIuc2Nzc1wiKTtcblxuXHRcdGlmKHR5cGVvZiBuZXdDb250ZW50ID09PSAnc3RyaW5nJykgbmV3Q29udGVudCA9IFtbbW9kdWxlLmlkLCBuZXdDb250ZW50LCAnJ11dO1xuXG5cdFx0dmFyIGxvY2FscyA9IChmdW5jdGlvbihhLCBiKSB7XG5cdFx0XHR2YXIga2V5LCBpZHggPSAwO1xuXG5cdFx0XHRmb3Ioa2V5IGluIGEpIHtcblx0XHRcdFx0aWYoIWIgfHwgYVtrZXldICE9PSBiW2tleV0pIHJldHVybiBmYWxzZTtcblx0XHRcdFx0aWR4Kys7XG5cdFx0XHR9XG5cblx0XHRcdGZvcihrZXkgaW4gYikgaWR4LS07XG5cblx0XHRcdHJldHVybiBpZHggPT09IDA7XG5cdFx0fShjb250ZW50LmxvY2FscywgbmV3Q29udGVudC5sb2NhbHMpKTtcblxuXHRcdGlmKCFsb2NhbHMpIHRocm93IG5ldyBFcnJvcignQWJvcnRpbmcgQ1NTIEhNUiBkdWUgdG8gY2hhbmdlZCBjc3MtbW9kdWxlcyBsb2NhbHMuJyk7XG5cblx0XHR1cGRhdGUobmV3Q29udGVudCk7XG5cdH0pO1xuXG5cdG1vZHVsZS5ob3QuZGlzcG9zZShmdW5jdGlvbigpIHsgdXBkYXRlKCk7IH0pO1xufSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./packages/cheque-payment-integration/src/PoNumber.scss\n\n}");
 
 /***/ },
 
@@ -71,70 +35,7 @@ if(false) // removed by dead control flow
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.mjs");
-/* harmony import */ var _bigcommerce_checkout_sdk_integrations_offline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout-sdk/integrations/offline */ "../checkout-sdk-js/dist/esm/integrations/offline.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/contexts */ "./packages/contexts/src/capabilities/CapabilitiesContext.tsx");
-/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ "./packages/payment-integration-api/src/toResolvableComponent.tsx");
-/* harmony import */ var _PoNumber__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PoNumber */ "./packages/cheque-payment-integration/src/PoNumber.tsx");
-
-
-
-
-
-
-const ChequePaymentMethod = ({ method, checkoutService, onUnhandledError, paymentForm, language, }) => {
-    const { payment: { poConfig }, } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_3__.useCapabilities)();
-    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
-        const initializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
-            try {
-                yield checkoutService.initializePayment({
-                    gatewayId: method.gateway,
-                    methodId: method.id,
-                    integrations: [_bigcommerce_checkout_sdk_integrations_offline__WEBPACK_IMPORTED_MODULE_1__.createOfflinePaymentStrategy],
-                });
-            }
-            catch (error) {
-                if (error instanceof Error) {
-                    onUnhandledError(error);
-                }
-            }
-        });
-        void initializePayment();
-        return () => {
-            const deinitializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
-                try {
-                    yield checkoutService.deinitializePayment({
-                        gatewayId: method.gateway,
-                        methodId: method.id,
-                    });
-                }
-                catch (error) {
-                    if (error instanceof Error) {
-                        onUnhandledError(error);
-                    }
-                }
-            });
-            void deinitializePayment();
-        };
-    }, [checkoutService, method.gateway, method.id, onUnhandledError]);
-    if (poConfig) {
-        return (react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_PoNumber__WEBPACK_IMPORTED_MODULE_5__["default"], { isRequired: poConfig.required, label: poConfig.label, language: language, method: method, paymentForm: paymentForm }));
-    }
-    return null;
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_4__["default"])(ChequePaymentMethod, [
-    {
-        id: 'cheque',
-        type: 'PAYMENT_TYPE_OFFLINE',
-    },
-]));
-
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ \"./node_modules/tslib/tslib.es6.mjs\");\n/* harmony import */ var _bigcommerce_checkout_sdk_integrations_offline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout-sdk/integrations/offline */ \"./node_modules/@bigcommerce/checkout-sdk/dist/esm/integrations/offline.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/contexts */ \"./packages/contexts/src/capabilities/CapabilitiesContext.tsx\");\n/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ \"./packages/payment-integration-api/src/toResolvableComponent.tsx\");\n/* harmony import */ var _PoNumber__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PoNumber */ \"./packages/cheque-payment-integration/src/PoNumber.tsx\");\n\n\n\n\n\n\nconst ChequePaymentMethod = ({ method, checkoutService, onUnhandledError, paymentForm, language, }) => {\n    const { payment: { poConfig }, } = (0,_bigcommerce_checkout_contexts__WEBPACK_IMPORTED_MODULE_3__.useCapabilities)();\n    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {\n        const initializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {\n            try {\n                yield checkoutService.initializePayment({\n                    gatewayId: method.gateway,\n                    methodId: method.id,\n                    integrations: [_bigcommerce_checkout_sdk_integrations_offline__WEBPACK_IMPORTED_MODULE_1__.createOfflinePaymentStrategy],\n                });\n            }\n            catch (error) {\n                if (error instanceof Error) {\n                    onUnhandledError(error);\n                }\n            }\n        });\n        void initializePayment();\n        return () => {\n            const deinitializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {\n                try {\n                    yield checkoutService.deinitializePayment({\n                        gatewayId: method.gateway,\n                        methodId: method.id,\n                    });\n                }\n                catch (error) {\n                    if (error instanceof Error) {\n                        onUnhandledError(error);\n                    }\n                }\n            });\n            void deinitializePayment();\n        };\n    }, [checkoutService, method.gateway, method.id, onUnhandledError]);\n    if (poConfig === null || poConfig === void 0 ? void 0 : poConfig.field) {\n        return (react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_PoNumber__WEBPACK_IMPORTED_MODULE_5__[\"default\"], { isRequired: poConfig.field.required, label: poConfig.field.label, language: language, method: method, paymentForm: paymentForm }));\n    }\n    return null;\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(ChequePaymentMethod, [\n    {\n        id: 'cheque',\n        type: 'PAYMENT_TYPE_OFFLINE',\n    },\n]));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9jaGVxdWUtcGF5bWVudC1pbnRlZ3JhdGlvbi9zcmMvQ2hlcXVlUGF5bWVudE1ldGhvZC50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBQThGO0FBQzdCO0FBRUE7QUFJVjtBQUVyQjtBQUVsQyxNQUFNLG1CQUFtQixHQUEwQyxDQUFDLEVBQ2hFLE1BQU0sRUFDTixlQUFlLEVBQ2YsZ0JBQWdCLEVBQ2hCLFdBQVcsRUFDWCxRQUFRLEdBQ1gsRUFBRSxFQUFFO0lBQ0QsTUFBTSxFQUNGLE9BQU8sRUFBRSxFQUFFLFFBQVEsRUFBRSxHQUN4QixHQUFHLCtFQUFlLEVBQUUsQ0FBQztJQUV0QixnREFBUyxDQUFDLEdBQUcsRUFBRTtRQUNYLE1BQU0saUJBQWlCLEdBQUcsR0FBUyxFQUFFLENBQUM7WUFDbEMsSUFBSSxDQUFDO2dCQUNELE1BQU0sZUFBZSxDQUFDLGlCQUFpQixDQUFDO29CQUNwQyxTQUFTLEVBQUUsTUFBTSxDQUFDLE9BQU87b0JBQ3pCLFFBQVEsRUFBRSxNQUFNLENBQUMsRUFBRTtvQkFDbkIsWUFBWSxFQUFFLENBQUMsd0dBQTRCLENBQUM7aUJBQy9DLENBQUMsQ0FBQztZQUNQLENBQUM7WUFBQyxPQUFPLEtBQUssRUFBRSxDQUFDO2dCQUNiLElBQUksS0FBSyxZQUFZLEtBQUssRUFBRSxDQUFDO29CQUN6QixnQkFBZ0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztnQkFDNUIsQ0FBQztZQUNMLENBQUM7UUFDTCxDQUFDLEVBQUM7UUFFRixLQUFLLGlCQUFpQixFQUFFLENBQUM7UUFFekIsT0FBTyxHQUFHLEVBQUU7WUFDUixNQUFNLG1CQUFtQixHQUFHLEdBQVMsRUFBRSxDQUFDO2dCQUNwQyxJQUFJLENBQUM7b0JBQ0QsTUFBTSxlQUFlLENBQUMsbUJBQW1CLENBQUM7d0JBQ3RDLFNBQVMsRUFBRSxNQUFNLENBQUMsT0FBTzt3QkFDekIsUUFBUSxFQUFFLE1BQU0sQ0FBQyxFQUFFO3FCQUN0QixDQUFDLENBQUM7Z0JBQ1AsQ0FBQztnQkFBQyxPQUFPLEtBQUssRUFBRSxDQUFDO29CQUNiLElBQUksS0FBSyxZQUFZLEtBQUssRUFBRSxDQUFDO3dCQUN6QixnQkFBZ0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztvQkFDNUIsQ0FBQztnQkFDTCxDQUFDO1lBQ0wsQ0FBQyxFQUFDO1lBRUYsS0FBSyxtQkFBbUIsRUFBRSxDQUFDO1FBQy9CLENBQUMsQ0FBQztJQUNOLENBQUMsRUFBRSxDQUFDLGVBQWUsRUFBRSxNQUFNLENBQUMsT0FBTyxFQUFFLE1BQU0sQ0FBQyxFQUFFLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQyxDQUFDO0lBRW5FLElBQUksUUFBUSxhQUFSLFFBQVEsdUJBQVIsUUFBUSxDQUFFLEtBQUssRUFBRSxDQUFDO1FBQ2xCLE9BQU8sQ0FDSCwyREFBQyxpREFBUSxJQUNMLFVBQVUsRUFBRSxRQUFRLENBQUMsS0FBSyxDQUFDLFFBQVEsRUFDbkMsS0FBSyxFQUFFLFFBQVEsQ0FBQyxLQUFLLENBQUMsS0FBSyxFQUMzQixRQUFRLEVBQUUsUUFBUSxFQUNsQixNQUFNLEVBQUUsTUFBTSxFQUNkLFdBQVcsRUFBRSxXQUFXLEdBQzFCLENBQ0wsQ0FBQztJQUNOLENBQUM7SUFFRCxPQUFPLElBQUksQ0FBQztBQUNoQixDQUFDLENBQUM7QUFFRixpRUFBZSx5RkFBcUIsQ0FBQyxtQkFBbUIsRUFBRTtJQUN0RDtRQUNJLEVBQUUsRUFBRSxRQUFRO1FBQ1osSUFBSSxFQUFFLHNCQUFzQjtLQUMvQjtDQUNKLENBQUMsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2NoZWNrb3V0Ly4vcGFja2FnZXMvY2hlcXVlLXBheW1lbnQtaW50ZWdyYXRpb24vc3JjL0NoZXF1ZVBheW1lbnRNZXRob2QudHN4PzVhMDkiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3JlYXRlT2ZmbGluZVBheW1lbnRTdHJhdGVneSB9IGZyb20gJ0BiaWdjb21tZXJjZS9jaGVja291dC1zZGsvaW50ZWdyYXRpb25zL29mZmxpbmUnO1xuaW1wb3J0IFJlYWN0LCB7IHR5cGUgRnVuY3Rpb25Db21wb25lbnQsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JztcblxuaW1wb3J0IHsgdXNlQ2FwYWJpbGl0aWVzIH0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0L2NvbnRleHRzJztcbmltcG9ydCB7XG4gICAgdHlwZSBQYXltZW50TWV0aG9kUHJvcHMsXG4gICAgdG9SZXNvbHZhYmxlQ29tcG9uZW50LFxufSBmcm9tICdAYmlnY29tbWVyY2UvY2hlY2tvdXQvcGF5bWVudC1pbnRlZ3JhdGlvbi1hcGknO1xuXG5pbXBvcnQgUG9OdW1iZXIgZnJvbSAnLi9Qb051bWJlcic7XG5cbmNvbnN0IENoZXF1ZVBheW1lbnRNZXRob2Q6IEZ1bmN0aW9uQ29tcG9uZW50PFBheW1lbnRNZXRob2RQcm9wcz4gPSAoe1xuICAgIG1ldGhvZCxcbiAgICBjaGVja291dFNlcnZpY2UsXG4gICAgb25VbmhhbmRsZWRFcnJvcixcbiAgICBwYXltZW50Rm9ybSxcbiAgICBsYW5ndWFnZSxcbn0pID0+IHtcbiAgICBjb25zdCB7XG4gICAgICAgIHBheW1lbnQ6IHsgcG9Db25maWcgfSxcbiAgICB9ID0gdXNlQ2FwYWJpbGl0aWVzKCk7XG5cbiAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgICBjb25zdCBpbml0aWFsaXplUGF5bWVudCA9IGFzeW5jICgpID0+IHtcbiAgICAgICAgICAgIHRyeSB7XG4gICAgICAgICAgICAgICAgYXdhaXQgY2hlY2tvdXRTZXJ2aWNlLmluaXRpYWxpemVQYXltZW50KHtcbiAgICAgICAgICAgICAgICAgICAgZ2F0ZXdheUlkOiBtZXRob2QuZ2F0ZXdheSxcbiAgICAgICAgICAgICAgICAgICAgbWV0aG9kSWQ6IG1ldGhvZC5pZCxcbiAgICAgICAgICAgICAgICAgICAgaW50ZWdyYXRpb25zOiBbY3JlYXRlT2ZmbGluZVBheW1lbnRTdHJhdGVneV0sXG4gICAgICAgICAgICAgICAgfSk7XG4gICAgICAgICAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgICAgICAgICAgIGlmIChlcnJvciBpbnN0YW5jZW9mIEVycm9yKSB7XG4gICAgICAgICAgICAgICAgICAgIG9uVW5oYW5kbGVkRXJyb3IoZXJyb3IpO1xuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH1cbiAgICAgICAgfTtcblxuICAgICAgICB2b2lkIGluaXRpYWxpemVQYXltZW50KCk7XG5cbiAgICAgICAgcmV0dXJuICgpID0+IHtcbiAgICAgICAgICAgIGNvbnN0IGRlaW5pdGlhbGl6ZVBheW1lbnQgPSBhc3luYyAoKSA9PiB7XG4gICAgICAgICAgICAgICAgdHJ5IHtcbiAgICAgICAgICAgICAgICAgICAgYXdhaXQgY2hlY2tvdXRTZXJ2aWNlLmRlaW5pdGlhbGl6ZVBheW1lbnQoe1xuICAgICAgICAgICAgICAgICAgICAgICAgZ2F0ZXdheUlkOiBtZXRob2QuZ2F0ZXdheSxcbiAgICAgICAgICAgICAgICAgICAgICAgIG1ldGhvZElkOiBtZXRob2QuaWQsXG4gICAgICAgICAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgICAgIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgICAgICAgICAgICAgICAgIGlmIChlcnJvciBpbnN0YW5jZW9mIEVycm9yKSB7XG4gICAgICAgICAgICAgICAgICAgICAgICBvblVuaGFuZGxlZEVycm9yKGVycm9yKTtcbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgIH07XG5cbiAgICAgICAgICAgIHZvaWQgZGVpbml0aWFsaXplUGF5bWVudCgpO1xuICAgICAgICB9O1xuICAgIH0sIFtjaGVja291dFNlcnZpY2UsIG1ldGhvZC5nYXRld2F5LCBtZXRob2QuaWQsIG9uVW5oYW5kbGVkRXJyb3JdKTtcblxuICAgIGlmIChwb0NvbmZpZz8uZmllbGQpIHtcbiAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgIDxQb051bWJlclxuICAgICAgICAgICAgICAgIGlzUmVxdWlyZWQ9e3BvQ29uZmlnLmZpZWxkLnJlcXVpcmVkfVxuICAgICAgICAgICAgICAgIGxhYmVsPXtwb0NvbmZpZy5maWVsZC5sYWJlbH1cbiAgICAgICAgICAgICAgICBsYW5ndWFnZT17bGFuZ3VhZ2V9XG4gICAgICAgICAgICAgICAgbWV0aG9kPXttZXRob2R9XG4gICAgICAgICAgICAgICAgcGF5bWVudEZvcm09e3BheW1lbnRGb3JtfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgKTtcbiAgICB9XG5cbiAgICByZXR1cm4gbnVsbDtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IHRvUmVzb2x2YWJsZUNvbXBvbmVudChDaGVxdWVQYXltZW50TWV0aG9kLCBbXG4gICAge1xuICAgICAgICBpZDogJ2NoZXF1ZScsXG4gICAgICAgIHR5cGU6ICdQQVlNRU5UX1RZUEVfT0ZGTElORScsXG4gICAgfSxcbl0pO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/cheque-payment-integration/src/ChequePaymentMethod.tsx\n\n}");
 
 /***/ },
 
@@ -145,50 +46,7 @@ const ChequePaymentMethod = ({ method, checkoutService, onUnhandledError, paymen
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   PO_NUMBER_FIELD_NAME: () => (/* binding */ PO_NUMBER_FIELD_NAME),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ "./packages/locale/src/TranslatedString.tsx");
-/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/form/TextInput/TextInput.tsx");
-/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/form/FormField/FormField.tsx");
-/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ "./packages/ui/src/form/Legend/Legend.tsx");
-/* harmony import */ var _bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bigcommerce/checkout/utility */ "./packages/utility/src/storage/poNumberStorage.ts");
-/* harmony import */ var _getPoNumberValidationSchema__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./getPoNumberValidationSchema */ "./packages/cheque-payment-integration/src/getPoNumberValidationSchema.ts");
-/* harmony import */ var _PoNumber_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./PoNumber.scss */ "./packages/cheque-payment-integration/src/PoNumber.scss");
-/* harmony import */ var _PoNumber_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_PoNumber_scss__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-
-
-
-const PO_NUMBER_FIELD_NAME = 'poNumber';
-const PoNumber = ({ label, isRequired, method, language, paymentForm: { setFieldValue, setValidationSchema }, }) => {
-    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-        setFieldValue(PO_NUMBER_FIELD_NAME, (0,_bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_5__.getPoNumber)());
-        setValidationSchema(method, (0,_getPoNumberValidationSchema__WEBPACK_IMPORTED_MODULE_6__["default"])(language, isRequired));
-        return () => {
-            setValidationSchema(method, null);
-        };
-    }, [isRequired, language, method, setFieldValue, setValidationSchema]);
-    const renderInput = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(({ field }) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({}, field, { "aria-labelledby": `${PO_NUMBER_FIELD_NAME}-label ${PO_NUMBER_FIELD_NAME}-field-error-message`, id: PO_NUMBER_FIELD_NAME }))), []);
-    const handleChange = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)((value) => {
-        (0,_bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_5__.setPoNumber)(value.trim());
-    }, []);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "po-number-container" },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__["default"], { input: renderInput, label: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__["default"], null,
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", { className: "po-number-label", htmlFor: PO_NUMBER_FIELD_NAME, id: `${PO_NUMBER_FIELD_NAME}-label` },
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, label),
-                    !isRequired && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null,
-                        ' ',
-                        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__["default"], { id: "payment.po_number_optional" }))))), name: PO_NUMBER_FIELD_NAME, onChange: handleChange })));
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PoNumber);
-
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   PO_NUMBER_FIELD_NAME: () => (/* binding */ PO_NUMBER_FIELD_NAME),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout/locale */ \"./packages/locale/src/TranslatedString.tsx\");\n/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ \"./packages/ui/src/form/TextInput/TextInput.tsx\");\n/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ \"./packages/ui/src/form/FormField/FormField.tsx\");\n/* harmony import */ var _bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/ui */ \"./packages/ui/src/form/Legend/Legend.tsx\");\n/* harmony import */ var _bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @bigcommerce/checkout/utility */ \"./packages/utility/src/storage/B2BSessionStorage.ts\");\n/* harmony import */ var _getPoNumberValidationSchema__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./getPoNumberValidationSchema */ \"./packages/cheque-payment-integration/src/getPoNumberValidationSchema.ts\");\n/* harmony import */ var _PoNumber_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./PoNumber.scss */ \"./packages/cheque-payment-integration/src/PoNumber.scss\");\n/* harmony import */ var _PoNumber_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_PoNumber_scss__WEBPACK_IMPORTED_MODULE_7__);\n\n\n\n\n\n\nconst PO_NUMBER_FIELD_NAME = 'poNumber';\nconst PoNumber = ({ label, isRequired, method, language, paymentForm: { setFieldValue, setValidationSchema }, }) => {\n    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {\n        setFieldValue(PO_NUMBER_FIELD_NAME, _bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_5__.B2BSessionStorage.getValue(_bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_5__.B2BSessionStorage.poNumberKey));\n        setValidationSchema(method, (0,_getPoNumberValidationSchema__WEBPACK_IMPORTED_MODULE_6__[\"default\"])(language, isRequired, label));\n        return () => {\n            setValidationSchema(method, null);\n        };\n    }, [isRequired, label, language, method, setFieldValue, setValidationSchema]);\n    const renderInput = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(({ field }) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_2__[\"default\"], Object.assign({}, field, { \"aria-labelledby\": `${PO_NUMBER_FIELD_NAME}-label ${PO_NUMBER_FIELD_NAME}-field-error-message`, id: PO_NUMBER_FIELD_NAME }))), []);\n    const handleChange = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)((value) => {\n        _bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_5__.B2BSessionStorage.set(_bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_5__.B2BSessionStorage.poNumberKey, value.trim());\n    }, []);\n    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", { className: \"po-number-container\" },\n        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_3__[\"default\"], { input: renderInput, label: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_ui__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null,\n                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"label\", { className: \"po-number-label\", htmlFor: PO_NUMBER_FIELD_NAME, id: `${PO_NUMBER_FIELD_NAME}-label` },\n                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", null, label),\n                    !isRequired && (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"span\", null,\n                        ' ',\n                        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_bigcommerce_checkout_locale__WEBPACK_IMPORTED_MODULE_1__[\"default\"], { id: \"common.optional_text\" }))))), name: PO_NUMBER_FIELD_NAME, onChange: handleChange })));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PoNumber);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9jaGVxdWUtcGF5bWVudC1pbnRlZ3JhdGlvbi9zcmMvUG9OdW1iZXIudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7OztBQUU4RTtBQUVkO0FBRVE7QUFDTjtBQUVNO0FBRS9DO0FBVWxCLE1BQU0sb0JBQW9CLEdBQUcsVUFBVSxDQUFDO0FBRS9DLE1BQU0sUUFBUSxHQUFxQyxDQUFDLEVBQ2hELEtBQUssRUFDTCxVQUFVLEVBQ1YsTUFBTSxFQUNOLFFBQVEsRUFDUixXQUFXLEVBQUUsRUFBRSxhQUFhLEVBQUUsbUJBQW1CLEVBQUUsR0FDdEQsRUFBRSxFQUFFO0lBQ0QsZ0RBQVMsQ0FBQyxHQUFHLEVBQUU7UUFDWCxhQUFhLENBQ1Qsb0JBQW9CLEVBQ3BCLDRFQUFpQixDQUFDLFFBQVEsQ0FBQyw0RUFBaUIsQ0FBQyxXQUFXLENBQUMsQ0FDNUQsQ0FBQztRQUNGLG1CQUFtQixDQUFDLE1BQU0sRUFBRSx3RUFBMkIsQ0FBQyxRQUFRLEVBQUUsVUFBVSxFQUFFLEtBQUssQ0FBQyxDQUFDLENBQUM7UUFFdEYsT0FBTyxHQUFHLEVBQUU7WUFDUixtQkFBbUIsQ0FBQyxNQUFNLEVBQUUsSUFBSSxDQUFDLENBQUM7UUFDdEMsQ0FBQyxDQUFDO0lBQ04sQ0FBQyxFQUFFLENBQUMsVUFBVSxFQUFFLEtBQUssRUFBRSxRQUFRLEVBQUUsTUFBTSxFQUFFLGFBQWEsRUFBRSxtQkFBbUIsQ0FBQyxDQUFDLENBQUM7SUFFOUUsTUFBTSxXQUFXLEdBQUcsa0RBQVcsQ0FDM0IsQ0FBQyxFQUFFLEtBQUssRUFBc0IsRUFBRSxFQUFFLENBQUMsQ0FDL0IsMkRBQUMsZ0VBQVMsb0JBQ0YsS0FBSyx1QkFDUSxHQUFHLG9CQUFvQixVQUFVLG9CQUFvQixzQkFBc0IsRUFDNUYsRUFBRSxFQUFFLG9CQUFvQixJQUMxQixDQUNMLEVBQ0QsRUFBRSxDQUNMLENBQUM7SUFFRixNQUFNLFlBQVksR0FBRyxrREFBVyxDQUFDLENBQUMsS0FBYSxFQUFFLEVBQUU7UUFDL0MsNEVBQWlCLENBQUMsR0FBRyxDQUFDLDRFQUFpQixDQUFDLFdBQVcsRUFBRSxLQUFLLENBQUMsSUFBSSxFQUFFLENBQUMsQ0FBQztJQUN2RSxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQUM7SUFFUCxPQUFPLENBQ0gsb0VBQUssU0FBUyxFQUFDLHFCQUFxQjtRQUNoQywyREFBQyxnRUFBUyxJQUNOLEtBQUssRUFBRSxXQUFXLEVBQ2xCLEtBQUssRUFDRCwyREFBQyxnRUFBTTtnQkFDSCxzRUFDSSxTQUFTLEVBQUMsaUJBQWlCLEVBQzNCLE9BQU8sRUFBRSxvQkFBb0IsRUFDN0IsRUFBRSxFQUFFLEdBQUcsb0JBQW9CLFFBQVE7b0JBRW5DLHlFQUFPLEtBQUssQ0FBUTtvQkFDbkIsQ0FBQyxVQUFVLElBQUksQ0FDWjt3QkFDSyxHQUFHO3dCQUNKLDJEQUFDLG9FQUFnQixJQUFDLEVBQUUsRUFBQyxzQkFBc0IsR0FBRyxDQUMzQyxDQUNWLENBQ0csQ0FDSCxFQUViLElBQUksRUFBRSxvQkFBb0IsRUFDMUIsUUFBUSxFQUFFLFlBQVksR0FDeEIsQ0FDQSxDQUNULENBQUM7QUFDTixDQUFDLENBQUM7QUFFRixpRUFBZSxRQUFRLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGVja291dC8uL3BhY2thZ2VzL2NoZXF1ZS1wYXltZW50LWludGVncmF0aW9uL3NyYy9Qb051bWJlci50c3g/Y2JiNiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB0eXBlIExhbmd1YWdlU2VydmljZSwgdHlwZSBQYXltZW50TWV0aG9kIH0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0LXNkayc7XG5pbXBvcnQgeyB0eXBlIEZpZWxkUHJvcHMgfSBmcm9tICdmb3JtaWsnO1xuaW1wb3J0IFJlYWN0LCB7IHR5cGUgRnVuY3Rpb25Db21wb25lbnQsIHVzZUNhbGxiYWNrLCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7XG5cbmltcG9ydCB7IFRyYW5zbGF0ZWRTdHJpbmcgfSBmcm9tICdAYmlnY29tbWVyY2UvY2hlY2tvdXQvbG9jYWxlJztcbmltcG9ydCB7IHR5cGUgUGF5bWVudEZvcm1TZXJ2aWNlIH0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0L3BheW1lbnQtaW50ZWdyYXRpb24tYXBpJztcbmltcG9ydCB7IEZvcm1GaWVsZCwgTGVnZW5kLCBUZXh0SW5wdXQgfSBmcm9tICdAYmlnY29tbWVyY2UvY2hlY2tvdXQvdWknO1xuaW1wb3J0IHsgQjJCU2Vzc2lvblN0b3JhZ2UgfSBmcm9tICdAYmlnY29tbWVyY2UvY2hlY2tvdXQvdXRpbGl0eSc7XG5cbmltcG9ydCBnZXRQb051bWJlclZhbGlkYXRpb25TY2hlbWEgZnJvbSAnLi9nZXRQb051bWJlclZhbGlkYXRpb25TY2hlbWEnO1xuXG5pbXBvcnQgJy4vUG9OdW1iZXIuc2Nzcyc7XG5cbmV4cG9ydCBpbnRlcmZhY2UgUG9OdW1iZXJQcm9wcyB7XG4gICAgbGFiZWw6IHN0cmluZztcbiAgICBpc1JlcXVpcmVkOiBib29sZWFuO1xuICAgIG1ldGhvZDogUGF5bWVudE1ldGhvZDtcbiAgICBsYW5ndWFnZTogTGFuZ3VhZ2VTZXJ2aWNlO1xuICAgIHBheW1lbnRGb3JtOiBQYXltZW50Rm9ybVNlcnZpY2U7XG59XG5cbmV4cG9ydCBjb25zdCBQT19OVU1CRVJfRklFTERfTkFNRSA9ICdwb051bWJlcic7XG5cbmNvbnN0IFBvTnVtYmVyOiBGdW5jdGlvbkNvbXBvbmVudDxQb051bWJlclByb3BzPiA9ICh7XG4gICAgbGFiZWwsXG4gICAgaXNSZXF1aXJlZCxcbiAgICBtZXRob2QsXG4gICAgbGFuZ3VhZ2UsXG4gICAgcGF5bWVudEZvcm06IHsgc2V0RmllbGRWYWx1ZSwgc2V0VmFsaWRhdGlvblNjaGVtYSB9LFxufSkgPT4ge1xuICAgIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgICAgIHNldEZpZWxkVmFsdWUoXG4gICAgICAgICAgICBQT19OVU1CRVJfRklFTERfTkFNRSxcbiAgICAgICAgICAgIEIyQlNlc3Npb25TdG9yYWdlLmdldFZhbHVlKEIyQlNlc3Npb25TdG9yYWdlLnBvTnVtYmVyS2V5KSxcbiAgICAgICAgKTtcbiAgICAgICAgc2V0VmFsaWRhdGlvblNjaGVtYShtZXRob2QsIGdldFBvTnVtYmVyVmFsaWRhdGlvblNjaGVtYShsYW5ndWFnZSwgaXNSZXF1aXJlZCwgbGFiZWwpKTtcblxuICAgICAgICByZXR1cm4gKCkgPT4ge1xuICAgICAgICAgICAgc2V0VmFsaWRhdGlvblNjaGVtYShtZXRob2QsIG51bGwpO1xuICAgICAgICB9O1xuICAgIH0sIFtpc1JlcXVpcmVkLCBsYWJlbCwgbGFuZ3VhZ2UsIG1ldGhvZCwgc2V0RmllbGRWYWx1ZSwgc2V0VmFsaWRhdGlvblNjaGVtYV0pO1xuXG4gICAgY29uc3QgcmVuZGVySW5wdXQgPSB1c2VDYWxsYmFjayhcbiAgICAgICAgKHsgZmllbGQgfTogRmllbGRQcm9wczxzdHJpbmc+KSA9PiAoXG4gICAgICAgICAgICA8VGV4dElucHV0XG4gICAgICAgICAgICAgICAgey4uLmZpZWxkfVxuICAgICAgICAgICAgICAgIGFyaWEtbGFiZWxsZWRieT17YCR7UE9fTlVNQkVSX0ZJRUxEX05BTUV9LWxhYmVsICR7UE9fTlVNQkVSX0ZJRUxEX05BTUV9LWZpZWxkLWVycm9yLW1lc3NhZ2VgfVxuICAgICAgICAgICAgICAgIGlkPXtQT19OVU1CRVJfRklFTERfTkFNRX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgICksXG4gICAgICAgIFtdLFxuICAgICk7XG5cbiAgICBjb25zdCBoYW5kbGVDaGFuZ2UgPSB1c2VDYWxsYmFjaygodmFsdWU6IHN0cmluZykgPT4ge1xuICAgICAgICBCMkJTZXNzaW9uU3RvcmFnZS5zZXQoQjJCU2Vzc2lvblN0b3JhZ2UucG9OdW1iZXJLZXksIHZhbHVlLnRyaW0oKSk7XG4gICAgfSwgW10pO1xuXG4gICAgcmV0dXJuIChcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwby1udW1iZXItY29udGFpbmVyXCI+XG4gICAgICAgICAgICA8Rm9ybUZpZWxkXG4gICAgICAgICAgICAgICAgaW5wdXQ9e3JlbmRlcklucHV0fVxuICAgICAgICAgICAgICAgIGxhYmVsPXtcbiAgICAgICAgICAgICAgICAgICAgPExlZ2VuZD5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxsYWJlbFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cInBvLW51bWJlci1sYWJlbFwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgaHRtbEZvcj17UE9fTlVNQkVSX0ZJRUxEX05BTUV9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgaWQ9e2Ake1BPX05VTUJFUl9GSUVMRF9OQU1FfS1sYWJlbGB9XG4gICAgICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+e2xhYmVsfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB7IWlzUmVxdWlyZWQgJiYgKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHsnICd9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8VHJhbnNsYXRlZFN0cmluZyBpZD1cImNvbW1vbi5vcHRpb25hbF90ZXh0XCIgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICl9XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2xhYmVsPlxuICAgICAgICAgICAgICAgICAgICA8L0xlZ2VuZD5cbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgbmFtZT17UE9fTlVNQkVSX0ZJRUxEX05BTUV9XG4gICAgICAgICAgICAgICAgb25DaGFuZ2U9e2hhbmRsZUNoYW5nZX1cbiAgICAgICAgICAgIC8+XG4gICAgICAgIDwvZGl2PlxuICAgICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBQb051bWJlcjtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./packages/cheque-payment-integration/src/PoNumber.tsx\n\n}");
 
 /***/ },
 
@@ -199,23 +57,7 @@ const PoNumber = ({ label, isRequired, method, language, paymentForm: { setField
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _bigcommerce_memoize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @bigcommerce/memoize */ "./node_modules/@bigcommerce/memoize/lib/index.js");
-/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_memoize__WEBPACK_IMPORTED_MODULE_0__.memoize)(function getPoNumberValidationSchema(language, isRequired) {
-    if (!isRequired) {
-        return (0,yup__WEBPACK_IMPORTED_MODULE_1__.object)({});
-    }
-    return (0,yup__WEBPACK_IMPORTED_MODULE_1__.object)({
-        poNumber: (0,yup__WEBPACK_IMPORTED_MODULE_1__.string)().trim().required(language.translate('payment.po_number_required_error')),
-    });
-}));
-
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _bigcommerce_memoize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @bigcommerce/memoize */ \"./node_modules/@bigcommerce/memoize/lib/index.js\");\n/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! yup */ \"./node_modules/yup/es/index.js\");\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_memoize__WEBPACK_IMPORTED_MODULE_0__.memoize)(function getPoNumberValidationSchema(language, isRequired, label) {\n    if (!isRequired) {\n        return (0,yup__WEBPACK_IMPORTED_MODULE_1__.object)({});\n    }\n    return (0,yup__WEBPACK_IMPORTED_MODULE_1__.object)({\n        poNumber: (0,yup__WEBPACK_IMPORTED_MODULE_1__.string)()\n            .trim()\n            .required(language.translate('payment.errors.field_required_error', { label })),\n    });\n}));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9jaGVxdWUtcGF5bWVudC1pbnRlZ3JhdGlvbi9zcmMvZ2V0UG9OdW1iZXJWYWxpZGF0aW9uU2NoZW1hLnRzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUMrQztBQUNTO0FBRXhELGlFQUFlLDZEQUFPLENBQUMsU0FBUywyQkFBMkIsQ0FDdkQsUUFBeUIsRUFDekIsVUFBbUIsRUFDbkIsS0FBYTtJQUViLElBQUksQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUNkLE9BQU8sMkNBQU0sQ0FBQyxFQUFFLENBQUMsQ0FBQztJQUN0QixDQUFDO0lBRUQsT0FBTywyQ0FBTSxDQUFDO1FBQ1YsUUFBUSxFQUFFLDJDQUFNLEVBQUU7YUFDYixJQUFJLEVBQUU7YUFDTixRQUFRLENBQUMsUUFBUSxDQUFDLFNBQVMsQ0FBQyxxQ0FBcUMsRUFBRSxFQUFFLEtBQUssRUFBRSxDQUFDLENBQUM7S0FDdEYsQ0FBQyxDQUFDO0FBQ1AsQ0FBQyxDQUFDLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGVja291dC8uL3BhY2thZ2VzL2NoZXF1ZS1wYXltZW50LWludGVncmF0aW9uL3NyYy9nZXRQb051bWJlclZhbGlkYXRpb25TY2hlbWEudHM/NDk1ZCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB0eXBlIExhbmd1YWdlU2VydmljZSB9IGZyb20gJ0BiaWdjb21tZXJjZS9jaGVja291dC1zZGsnO1xuaW1wb3J0IHsgbWVtb2l6ZSB9IGZyb20gJ0BiaWdjb21tZXJjZS9tZW1vaXplJztcbmltcG9ydCB7IG9iamVjdCwgdHlwZSBPYmplY3RTY2hlbWEsIHN0cmluZyB9IGZyb20gJ3l1cCc7XG5cbmV4cG9ydCBkZWZhdWx0IG1lbW9pemUoZnVuY3Rpb24gZ2V0UG9OdW1iZXJWYWxpZGF0aW9uU2NoZW1hKFxuICAgIGxhbmd1YWdlOiBMYW5ndWFnZVNlcnZpY2UsXG4gICAgaXNSZXF1aXJlZDogYm9vbGVhbixcbiAgICBsYWJlbDogc3RyaW5nLFxuKTogT2JqZWN0U2NoZW1hIHtcbiAgICBpZiAoIWlzUmVxdWlyZWQpIHtcbiAgICAgICAgcmV0dXJuIG9iamVjdCh7fSk7XG4gICAgfVxuXG4gICAgcmV0dXJuIG9iamVjdCh7XG4gICAgICAgIHBvTnVtYmVyOiBzdHJpbmcoKVxuICAgICAgICAgICAgLnRyaW0oKVxuICAgICAgICAgICAgLnJlcXVpcmVkKGxhbmd1YWdlLnRyYW5zbGF0ZSgncGF5bWVudC5lcnJvcnMuZmllbGRfcmVxdWlyZWRfZXJyb3InLCB7IGxhYmVsIH0pKSxcbiAgICB9KTtcbn0pO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/cheque-payment-integration/src/getPoNumberValidationSchema.ts\n\n}");
 
 /***/ },
 
@@ -226,13 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ChequePaymentMethod: () => (/* reexport safe */ _ChequePaymentMethod__WEBPACK_IMPORTED_MODULE_0__["default"])
-/* harmony export */ });
-/* harmony import */ var _ChequePaymentMethod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ChequePaymentMethod */ "./packages/cheque-payment-integration/src/ChequePaymentMethod.tsx");
-
-
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ChequePaymentMethod: () => (/* reexport safe */ _ChequePaymentMethod__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _ChequePaymentMethod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ChequePaymentMethod */ \"./packages/cheque-payment-integration/src/ChequePaymentMethod.tsx\");\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9jaGVxdWUtcGF5bWVudC1pbnRlZ3JhdGlvbi9zcmMvaW5kZXgudHMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBdUUiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGVja291dC8uL3BhY2thZ2VzL2NoZXF1ZS1wYXltZW50LWludGVncmF0aW9uL3NyYy9pbmRleC50cz8wZmY4Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IGRlZmF1bHQgYXMgQ2hlcXVlUGF5bWVudE1ldGhvZCB9IGZyb20gJy4vQ2hlcXVlUGF5bWVudE1ldGhvZCc7XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./packages/cheque-payment-integration/src/index.ts\n\n}");
 
 /***/ },
 
@@ -243,49 +79,8 @@ __webpack_require__.r(__webpack_exports__);
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ toResolvableComponent)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-function toResolvableComponent(
-// eslint-disable-next-line @typescript-eslint/naming-convention
-Component, resolveIds) {
-    return Object.assign((props) => react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, Object.assign({}, props)), { resolveIds });
-}
-
-
-/***/ },
-
-/***/ "./packages/utility/src/storage/poNumberStorage.ts"
-/*!*********************************************************!*\
-  !*** ./packages/utility/src/storage/poNumberStorage.ts ***!
-  \*********************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   clearPoNumber: () => (/* binding */ clearPoNumber),
-/* harmony export */   getPoNumber: () => (/* binding */ getPoNumber),
-/* harmony export */   setPoNumber: () => (/* binding */ setPoNumber)
-/* harmony export */ });
-const KEY = 'PoNumber';
-const getPoNumber = () => { var _a; return (_a = sessionStorage.getItem(KEY)) !== null && _a !== void 0 ? _a : ''; };
-const setPoNumber = (value) => {
-    if (value) {
-        sessionStorage.setItem(KEY, value);
-    }
-    else {
-        sessionStorage.removeItem(KEY);
-    }
-};
-const clearPoNumber = () => sessionStorage.removeItem(KEY);
-
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ toResolvableComponent)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction toResolvableComponent(\n// eslint-disable-next-line @typescript-eslint/naming-convention\nComponent, resolveIds) {\n    return Object.assign((props) => react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, Object.assign({}, props)), { resolveIds });\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9wYXltZW50LWludGVncmF0aW9uLWFwaS9zcmMvdG9SZXNvbHZhYmxlQ29tcG9uZW50LnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBa0Q7QUFJbkMsU0FBUyxxQkFBcUI7QUFDekMsZ0VBQWdFO0FBQ2hFLFNBQWdDLEVBQ2hDLFVBQXlCO0lBRXpCLE9BQU8sTUFBTSxDQUFDLE1BQU0sQ0FBQyxDQUFDLEtBQWEsRUFBRSxFQUFFLENBQUMsMkRBQUMsU0FBUyxvQkFBSyxLQUFLLEVBQUksRUFBRSxFQUFFLFVBQVUsRUFBRSxDQUFDLENBQUM7QUFDdEYsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2NoZWNrb3V0Ly4vcGFja2FnZXMvcGF5bWVudC1pbnRlZ3JhdGlvbi1hcGkvc3JjL3RvUmVzb2x2YWJsZUNvbXBvbmVudC50c3g/ZjFhNCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdHlwZSBDb21wb25lbnRUeXBlIH0gZnJvbSAncmVhY3QnO1xuXG5pbXBvcnQgdHlwZSBSZXNvbHZhYmxlQ29tcG9uZW50IGZyb20gJy4vUmVzb2x2YWJsZUNvbXBvbmVudCc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIHRvUmVzb2x2YWJsZUNvbXBvbmVudDxUUHJvcHMgZXh0ZW5kcyBSZWNvcmQ8c3RyaW5nLCBhbnk+LCBUSWRlbnRpZmllcj4oXG4gICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uYW1pbmctY29udmVudGlvblxuICAgIENvbXBvbmVudDogQ29tcG9uZW50VHlwZTxUUHJvcHM+LFxuICAgIHJlc29sdmVJZHM6IFRJZGVudGlmaWVyW10sXG4pOiBSZXNvbHZhYmxlQ29tcG9uZW50PFRQcm9wcywgVElkZW50aWZpZXI+IHtcbiAgICByZXR1cm4gT2JqZWN0LmFzc2lnbigocHJvcHM6IFRQcm9wcykgPT4gPENvbXBvbmVudCB7Li4ucHJvcHN9IC8+LCB7IHJlc29sdmVJZHMgfSk7XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./packages/payment-integration-api/src/toResolvableComponent.tsx\n\n}");
 
 /***/ }
 
 }]);
-//# sourceMappingURL=cheque-payment-method.js.map
