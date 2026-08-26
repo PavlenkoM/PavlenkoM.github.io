@@ -1,12 +1,4 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (self["webpackJsonpCheckout"] = self["webpackJsonpCheckout"] || []).push([["offline-payment-method"],{
 
 /***/ "./packages/offline-payment-integration/src/OfflinePaymentMethod.tsx"
@@ -15,7 +7,61 @@
   \***************************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ \"./node_modules/tslib/tslib.es6.mjs\");\n/* harmony import */ var _bigcommerce_checkout_sdk_integrations_offline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout-sdk/integrations/offline */ \"./node_modules/@bigcommerce/checkout-sdk/dist/esm/integrations/offline.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ \"./packages/payment-integration-api/src/toResolvableComponent.tsx\");\n\n\n\n\nconst OfflinePaymentMethod = ({ method, checkoutService, onUnhandledError, }) => {\n    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {\n        const initializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {\n            try {\n                yield checkoutService.initializePayment({\n                    gatewayId: method.gateway,\n                    methodId: method.id,\n                    integrations: [_bigcommerce_checkout_sdk_integrations_offline__WEBPACK_IMPORTED_MODULE_1__.createOfflinePaymentStrategy],\n                });\n            }\n            catch (error) {\n                if (error instanceof Error) {\n                    onUnhandledError(error);\n                }\n            }\n        });\n        void initializePayment();\n        return () => {\n            const deinitializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {\n                try {\n                    yield checkoutService.deinitializePayment({\n                        gatewayId: method.gateway,\n                        methodId: method.id,\n                    });\n                }\n                catch (error) {\n                    if (error instanceof Error) {\n                        onUnhandledError(error);\n                    }\n                }\n            });\n            void deinitializePayment();\n        };\n    }, [checkoutService, method.gateway, method.id, onUnhandledError]);\n    return null;\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(OfflinePaymentMethod, [\n    {\n        type: 'PAYMENT_TYPE_OFFLINE',\n    },\n]));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9vZmZsaW5lLXBheW1lbnQtaW50ZWdyYXRpb24vc3JjL09mZmxpbmVQYXltZW50TWV0aG9kLnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQThGO0FBQ3BDO0FBS0g7QUFFdkQsTUFBTSxvQkFBb0IsR0FBMEMsQ0FBQyxFQUNqRSxNQUFNLEVBQ04sZUFBZSxFQUNmLGdCQUFnQixHQUNuQixFQUFFLEVBQUU7SUFDRCxnREFBUyxDQUFDLEdBQUcsRUFBRTtRQUNYLE1BQU0saUJBQWlCLEdBQUcsR0FBUyxFQUFFLENBQUM7WUFDbEMsSUFBSSxDQUFDO2dCQUNELE1BQU0sZUFBZSxDQUFDLGlCQUFpQixDQUFDO29CQUNwQyxTQUFTLEVBQUUsTUFBTSxDQUFDLE9BQU87b0JBQ3pCLFFBQVEsRUFBRSxNQUFNLENBQUMsRUFBRTtvQkFDbkIsWUFBWSxFQUFFLENBQUMsd0dBQTRCLENBQUM7aUJBQy9DLENBQUMsQ0FBQztZQUNQLENBQUM7WUFBQyxPQUFPLEtBQUssRUFBRSxDQUFDO2dCQUNiLElBQUksS0FBSyxZQUFZLEtBQUssRUFBRSxDQUFDO29CQUN6QixnQkFBZ0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztnQkFDNUIsQ0FBQztZQUNMLENBQUM7UUFDTCxDQUFDLEVBQUM7UUFFRixLQUFLLGlCQUFpQixFQUFFLENBQUM7UUFFekIsT0FBTyxHQUFHLEVBQUU7WUFDUixNQUFNLG1CQUFtQixHQUFHLEdBQVMsRUFBRSxDQUFDO2dCQUNwQyxJQUFJLENBQUM7b0JBQ0QsTUFBTSxlQUFlLENBQUMsbUJBQW1CLENBQUM7d0JBQ3RDLFNBQVMsRUFBRSxNQUFNLENBQUMsT0FBTzt3QkFDekIsUUFBUSxFQUFFLE1BQU0sQ0FBQyxFQUFFO3FCQUN0QixDQUFDLENBQUM7Z0JBQ1AsQ0FBQztnQkFBQyxPQUFPLEtBQUssRUFBRSxDQUFDO29CQUNiLElBQUksS0FBSyxZQUFZLEtBQUssRUFBRSxDQUFDO3dCQUN6QixnQkFBZ0IsQ0FBQyxLQUFLLENBQUMsQ0FBQztvQkFDNUIsQ0FBQztnQkFDTCxDQUFDO1lBQ0wsQ0FBQyxFQUFDO1lBRUYsS0FBSyxtQkFBbUIsRUFBRSxDQUFDO1FBQy9CLENBQUMsQ0FBQztJQUNOLENBQUMsRUFBRSxDQUFDLGVBQWUsRUFBRSxNQUFNLENBQUMsT0FBTyxFQUFFLE1BQU0sQ0FBQyxFQUFFLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQyxDQUFDO0lBRW5FLE9BQU8sSUFBSSxDQUFDO0FBQ2hCLENBQUMsQ0FBQztBQUVGLGlFQUFlLHlGQUFxQixDQUFDLG9CQUFvQixFQUFFO0lBQ3ZEO1FBQ0ksSUFBSSxFQUFFLHNCQUFzQjtLQUMvQjtDQUNKLENBQUMsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2NoZWNrb3V0Ly4vcGFja2FnZXMvb2ZmbGluZS1wYXltZW50LWludGVncmF0aW9uL3NyYy9PZmZsaW5lUGF5bWVudE1ldGhvZC50c3g/YmZiYyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjcmVhdGVPZmZsaW5lUGF5bWVudFN0cmF0ZWd5IH0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0LXNkay9pbnRlZ3JhdGlvbnMvb2ZmbGluZSc7XG5pbXBvcnQgeyB0eXBlIEZ1bmN0aW9uQ29tcG9uZW50LCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7XG5cbmltcG9ydCB7XG4gICAgdHlwZSBQYXltZW50TWV0aG9kUHJvcHMsXG4gICAgdG9SZXNvbHZhYmxlQ29tcG9uZW50LFxufSBmcm9tICdAYmlnY29tbWVyY2UvY2hlY2tvdXQvcGF5bWVudC1pbnRlZ3JhdGlvbi1hcGknO1xuXG5jb25zdCBPZmZsaW5lUGF5bWVudE1ldGhvZDogRnVuY3Rpb25Db21wb25lbnQ8UGF5bWVudE1ldGhvZFByb3BzPiA9ICh7XG4gICAgbWV0aG9kLFxuICAgIGNoZWNrb3V0U2VydmljZSxcbiAgICBvblVuaGFuZGxlZEVycm9yLFxufSkgPT4ge1xuICAgIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgICAgIGNvbnN0IGluaXRpYWxpemVQYXltZW50ID0gYXN5bmMgKCkgPT4ge1xuICAgICAgICAgICAgdHJ5IHtcbiAgICAgICAgICAgICAgICBhd2FpdCBjaGVja291dFNlcnZpY2UuaW5pdGlhbGl6ZVBheW1lbnQoe1xuICAgICAgICAgICAgICAgICAgICBnYXRld2F5SWQ6IG1ldGhvZC5nYXRld2F5LFxuICAgICAgICAgICAgICAgICAgICBtZXRob2RJZDogbWV0aG9kLmlkLFxuICAgICAgICAgICAgICAgICAgICBpbnRlZ3JhdGlvbnM6IFtjcmVhdGVPZmZsaW5lUGF5bWVudFN0cmF0ZWd5XSxcbiAgICAgICAgICAgICAgICB9KTtcbiAgICAgICAgICAgIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgICAgICAgICAgICAgaWYgKGVycm9yIGluc3RhbmNlb2YgRXJyb3IpIHtcbiAgICAgICAgICAgICAgICAgICAgb25VbmhhbmRsZWRFcnJvcihlcnJvcik7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICB9O1xuXG4gICAgICAgIHZvaWQgaW5pdGlhbGl6ZVBheW1lbnQoKTtcblxuICAgICAgICByZXR1cm4gKCkgPT4ge1xuICAgICAgICAgICAgY29uc3QgZGVpbml0aWFsaXplUGF5bWVudCA9IGFzeW5jICgpID0+IHtcbiAgICAgICAgICAgICAgICB0cnkge1xuICAgICAgICAgICAgICAgICAgICBhd2FpdCBjaGVja291dFNlcnZpY2UuZGVpbml0aWFsaXplUGF5bWVudCh7XG4gICAgICAgICAgICAgICAgICAgICAgICBnYXRld2F5SWQ6IG1ldGhvZC5nYXRld2F5LFxuICAgICAgICAgICAgICAgICAgICAgICAgbWV0aG9kSWQ6IG1ldGhvZC5pZCxcbiAgICAgICAgICAgICAgICAgICAgfSk7XG4gICAgICAgICAgICAgICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgICAgICAgICAgICAgICAgaWYgKGVycm9yIGluc3RhbmNlb2YgRXJyb3IpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIG9uVW5oYW5kbGVkRXJyb3IoZXJyb3IpO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfTtcblxuICAgICAgICAgICAgdm9pZCBkZWluaXRpYWxpemVQYXltZW50KCk7XG4gICAgICAgIH07XG4gICAgfSwgW2NoZWNrb3V0U2VydmljZSwgbWV0aG9kLmdhdGV3YXksIG1ldGhvZC5pZCwgb25VbmhhbmRsZWRFcnJvcl0pO1xuXG4gICAgcmV0dXJuIG51bGw7XG59O1xuXG5leHBvcnQgZGVmYXVsdCB0b1Jlc29sdmFibGVDb21wb25lbnQoT2ZmbGluZVBheW1lbnRNZXRob2QsIFtcbiAgICB7XG4gICAgICAgIHR5cGU6ICdQQVlNRU5UX1RZUEVfT0ZGTElORScsXG4gICAgfSxcbl0pO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/offline-payment-integration/src/OfflinePaymentMethod.tsx\n\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.mjs");
+/* harmony import */ var _bigcommerce_checkout_sdk_integrations_offline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout-sdk/integrations/offline */ "./node_modules/@bigcommerce/checkout-sdk/dist/esm/integrations/offline.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ "./packages/payment-integration-api/src/toResolvableComponent.tsx");
+
+
+
+
+const OfflinePaymentMethod = ({ method, checkoutService, onUnhandledError, }) => {
+    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+        const initializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
+            try {
+                yield checkoutService.initializePayment({
+                    gatewayId: method.gateway,
+                    methodId: method.id,
+                    integrations: [_bigcommerce_checkout_sdk_integrations_offline__WEBPACK_IMPORTED_MODULE_1__.createOfflinePaymentStrategy],
+                });
+            }
+            catch (error) {
+                if (error instanceof Error) {
+                    onUnhandledError(error);
+                }
+            }
+        });
+        void initializePayment();
+        return () => {
+            const deinitializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
+                try {
+                    yield checkoutService.deinitializePayment({
+                        gatewayId: method.gateway,
+                        methodId: method.id,
+                    });
+                }
+                catch (error) {
+                    if (error instanceof Error) {
+                        onUnhandledError(error);
+                    }
+                }
+            });
+            void deinitializePayment();
+        };
+    }, [checkoutService, method.gateway, method.id, onUnhandledError]);
+    return null;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__["default"])(OfflinePaymentMethod, [
+    {
+        type: 'PAYMENT_TYPE_OFFLINE',
+    },
+]));
+
 
 /***/ },
 
@@ -25,7 +71,13 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \***********************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   OfflinePaymentMethod: () => (/* reexport safe */ _OfflinePaymentMethod__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _OfflinePaymentMethod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OfflinePaymentMethod */ \"./packages/offline-payment-integration/src/OfflinePaymentMethod.tsx\");\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9vZmZsaW5lLXBheW1lbnQtaW50ZWdyYXRpb24vc3JjL2luZGV4LnRzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQXlFIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2hlY2tvdXQvLi9wYWNrYWdlcy9vZmZsaW5lLXBheW1lbnQtaW50ZWdyYXRpb24vc3JjL2luZGV4LnRzPzliMTMiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHsgZGVmYXVsdCBhcyBPZmZsaW5lUGF5bWVudE1ldGhvZCB9IGZyb20gJy4vT2ZmbGluZVBheW1lbnRNZXRob2QnO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/offline-payment-integration/src/index.ts\n\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   OfflinePaymentMethod: () => (/* reexport safe */ _OfflinePaymentMethod__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _OfflinePaymentMethod__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OfflinePaymentMethod */ "./packages/offline-payment-integration/src/OfflinePaymentMethod.tsx");
+
+
 
 /***/ },
 
@@ -35,8 +87,21 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \************************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ toResolvableComponent)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction toResolvableComponent(\n// eslint-disable-next-line @typescript-eslint/naming-convention\nComponent, resolveIds) {\n    return Object.assign((props) => react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, Object.assign({}, props)), { resolveIds });\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9wYXltZW50LWludGVncmF0aW9uLWFwaS9zcmMvdG9SZXNvbHZhYmxlQ29tcG9uZW50LnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBa0Q7QUFJbkMsU0FBUyxxQkFBcUI7QUFDekMsZ0VBQWdFO0FBQ2hFLFNBQWdDLEVBQ2hDLFVBQXlCO0lBRXpCLE9BQU8sTUFBTSxDQUFDLE1BQU0sQ0FBQyxDQUFDLEtBQWEsRUFBRSxFQUFFLENBQUMsMkRBQUMsU0FBUyxvQkFBSyxLQUFLLEVBQUksRUFBRSxFQUFFLFVBQVUsRUFBRSxDQUFDLENBQUM7QUFDdEYsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2NoZWNrb3V0Ly4vcGFja2FnZXMvcGF5bWVudC1pbnRlZ3JhdGlvbi1hcGkvc3JjL3RvUmVzb2x2YWJsZUNvbXBvbmVudC50c3g/ZjFhNCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdHlwZSBDb21wb25lbnRUeXBlIH0gZnJvbSAncmVhY3QnO1xuXG5pbXBvcnQgdHlwZSBSZXNvbHZhYmxlQ29tcG9uZW50IGZyb20gJy4vUmVzb2x2YWJsZUNvbXBvbmVudCc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIHRvUmVzb2x2YWJsZUNvbXBvbmVudDxUUHJvcHMgZXh0ZW5kcyBSZWNvcmQ8c3RyaW5nLCBhbnk+LCBUSWRlbnRpZmllcj4oXG4gICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uYW1pbmctY29udmVudGlvblxuICAgIENvbXBvbmVudDogQ29tcG9uZW50VHlwZTxUUHJvcHM+LFxuICAgIHJlc29sdmVJZHM6IFRJZGVudGlmaWVyW10sXG4pOiBSZXNvbHZhYmxlQ29tcG9uZW50PFRQcm9wcywgVElkZW50aWZpZXI+IHtcbiAgICByZXR1cm4gT2JqZWN0LmFzc2lnbigocHJvcHM6IFRQcm9wcykgPT4gPENvbXBvbmVudCB7Li4ucHJvcHN9IC8+LCB7IHJlc29sdmVJZHMgfSk7XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./packages/payment-integration-api/src/toResolvableComponent.tsx\n\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ toResolvableComponent)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function toResolvableComponent(
+// eslint-disable-next-line @typescript-eslint/naming-convention
+Component, resolveIds) {
+    return Object.assign((props) => react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, Object.assign({}, props)), { resolveIds });
+}
+
 
 /***/ }
 
 }]);
+//# sourceMappingURL=offline-payment-method.js.map

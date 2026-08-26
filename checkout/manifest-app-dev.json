@@ -5,6 +5,7 @@
   "js": [
     "runtime.js",
     "transients.js",
+    "polyfill.js",
     "vendor-initial.js",
     "checkout.js"
   ],

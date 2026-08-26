@@ -1,12 +1,4 @@
 "use strict";
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (self["webpackJsonpCheckout"] = self["webpackJsonpCheckout"] || []).push([["apple-pay-button"],{
 
 /***/ "./packages/apple-pay-integration/src/ApplePayButton.tsx"
@@ -15,7 +7,36 @@
   \***************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _bigcommerce_checkout_sdk_integrations_apple_pay__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @bigcommerce/checkout-sdk/integrations/apple-pay */ \"./node_modules/@bigcommerce/checkout-sdk/dist/esm/integrations/apple-pay.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _bigcommerce_checkout_checkout_button_integration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/checkout-button-integration */ \"./packages/checkout-button-integration/src/CheckoutButton.tsx\");\n/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ \"./packages/payment-integration-api/src/toResolvableComponent.tsx\");\n/* harmony import */ var _bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/utility */ \"./packages/utility/src/navigateToOrderConfirmation.ts\");\n\n\n\n\n\nconst ApplePayButton = (props) => {\n    const { language, onUnhandledError } = props;\n    const integrations = [_bigcommerce_checkout_sdk_integrations_apple_pay__WEBPACK_IMPORTED_MODULE_0__.createApplePayCustomerStrategy];\n    const additionalInitializationOptions = {\n        shippingLabel: language.translate('cart.shipping_text'),\n        subtotalLabel: language.translate('cart.subtotal_text'),\n        onPaymentAuthorize: _bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n        onError: onUnhandledError,\n    };\n    return (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_bigcommerce_checkout_checkout_button_integration__WEBPACK_IMPORTED_MODULE_2__[\"default\"], Object.assign({ additionalInitializationOptions: additionalInitializationOptions, integrations: integrations }, props)));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(ApplePayButton, [\n    { id: 'applepay' },\n]));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9hcHBsZS1wYXktaW50ZWdyYXRpb24vc3JjL0FwcGxlUGF5QnV0dG9uLnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQWtHO0FBQzVDO0FBRTZCO0FBSzVCO0FBQ3FCO0FBRTVFLE1BQU0sY0FBYyxHQUEyQyxDQUFDLEtBQUssRUFBRSxFQUFFO0lBQ3JFLE1BQU0sRUFBRSxRQUFRLEVBQUUsZ0JBQWdCLEVBQUUsR0FBRyxLQUFLLENBQUM7SUFFN0MsTUFBTSxZQUFZLEdBQUcsQ0FBQyw0R0FBOEIsQ0FBQyxDQUFDO0lBRXRELE1BQU0sK0JBQStCLEdBQUc7UUFDcEMsYUFBYSxFQUFFLFFBQVEsQ0FBQyxTQUFTLENBQUMsb0JBQW9CLENBQUM7UUFDdkQsYUFBYSxFQUFFLFFBQVEsQ0FBQyxTQUFTLENBQUMsb0JBQW9CLENBQUM7UUFDdkQsa0JBQWtCLEVBQUUscUVBQTJCO1FBQy9DLE9BQU8sRUFBRSxnQkFBZ0I7S0FDNUIsQ0FBQztJQUVGLE9BQU8sQ0FDSCwyREFBQyx5RkFBYyxrQkFDWCwrQkFBK0IsRUFBRSwrQkFBK0IsRUFDaEUsWUFBWSxFQUFFLFlBQVksSUFDdEIsS0FBSyxFQUNYLENBQ0wsQ0FBQztBQUNOLENBQUMsQ0FBQztBQUVGLGlFQUFlLHlGQUFxQixDQUErQyxjQUFjLEVBQUU7SUFDL0YsRUFBRSxFQUFFLEVBQUUsVUFBVSxFQUFFO0NBQ3JCLENBQUMsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2NoZWNrb3V0Ly4vcGFja2FnZXMvYXBwbGUtcGF5LWludGVncmF0aW9uL3NyYy9BcHBsZVBheUJ1dHRvbi50c3g/YmJlNCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjcmVhdGVBcHBsZVBheUN1c3RvbWVyU3RyYXRlZ3kgfSBmcm9tICdAYmlnY29tbWVyY2UvY2hlY2tvdXQtc2RrL2ludGVncmF0aW9ucy9hcHBsZS1wYXknO1xuaW1wb3J0IFJlYWN0LCB7IHR5cGUgRnVuY3Rpb25Db21wb25lbnQgfSBmcm9tICdyZWFjdCc7XG5cbmltcG9ydCB7IENoZWNrb3V0QnV0dG9uIH0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0L2NoZWNrb3V0LWJ1dHRvbi1pbnRlZ3JhdGlvbic7XG5pbXBvcnQge1xuICAgIHR5cGUgQ2hlY2tvdXRCdXR0b25Qcm9wcyxcbiAgICB0eXBlIENoZWNrb3V0QnV0dG9uUmVzb2x2ZUlkLFxuICAgIHRvUmVzb2x2YWJsZUNvbXBvbmVudCxcbn0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0L3BheW1lbnQtaW50ZWdyYXRpb24tYXBpJztcbmltcG9ydCB7IG5hdmlnYXRlVG9PcmRlckNvbmZpcm1hdGlvbiB9IGZyb20gJ0BiaWdjb21tZXJjZS9jaGVja291dC91dGlsaXR5JztcblxuY29uc3QgQXBwbGVQYXlCdXR0b246IEZ1bmN0aW9uQ29tcG9uZW50PENoZWNrb3V0QnV0dG9uUHJvcHM+ID0gKHByb3BzKSA9PiB7XG4gICAgY29uc3QgeyBsYW5ndWFnZSwgb25VbmhhbmRsZWRFcnJvciB9ID0gcHJvcHM7XG5cbiAgICBjb25zdCBpbnRlZ3JhdGlvbnMgPSBbY3JlYXRlQXBwbGVQYXlDdXN0b21lclN0cmF0ZWd5XTtcblxuICAgIGNvbnN0IGFkZGl0aW9uYWxJbml0aWFsaXphdGlvbk9wdGlvbnMgPSB7XG4gICAgICAgIHNoaXBwaW5nTGFiZWw6IGxhbmd1YWdlLnRyYW5zbGF0ZSgnY2FydC5zaGlwcGluZ190ZXh0JyksXG4gICAgICAgIHN1YnRvdGFsTGFiZWw6IGxhbmd1YWdlLnRyYW5zbGF0ZSgnY2FydC5zdWJ0b3RhbF90ZXh0JyksXG4gICAgICAgIG9uUGF5bWVudEF1dGhvcml6ZTogbmF2aWdhdGVUb09yZGVyQ29uZmlybWF0aW9uLFxuICAgICAgICBvbkVycm9yOiBvblVuaGFuZGxlZEVycm9yLFxuICAgIH07XG5cbiAgICByZXR1cm4gKFxuICAgICAgICA8Q2hlY2tvdXRCdXR0b25cbiAgICAgICAgICAgIGFkZGl0aW9uYWxJbml0aWFsaXphdGlvbk9wdGlvbnM9e2FkZGl0aW9uYWxJbml0aWFsaXphdGlvbk9wdGlvbnN9XG4gICAgICAgICAgICBpbnRlZ3JhdGlvbnM9e2ludGVncmF0aW9uc31cbiAgICAgICAgICAgIHsuLi5wcm9wc31cbiAgICAgICAgLz5cbiAgICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgdG9SZXNvbHZhYmxlQ29tcG9uZW50PENoZWNrb3V0QnV0dG9uUHJvcHMsIENoZWNrb3V0QnV0dG9uUmVzb2x2ZUlkPihBcHBsZVBheUJ1dHRvbiwgW1xuICAgIHsgaWQ6ICdhcHBsZXBheScgfSxcbl0pO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/apple-pay-integration/src/ApplePayButton.tsx\n\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _bigcommerce_checkout_sdk_integrations_apple_pay__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @bigcommerce/checkout-sdk/integrations/apple-pay */ "./node_modules/@bigcommerce/checkout-sdk/dist/esm/integrations/apple-pay.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _bigcommerce_checkout_checkout_button_integration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/checkout-button-integration */ "./packages/checkout-button-integration/src/CheckoutButton.tsx");
+/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ "./packages/payment-integration-api/src/toResolvableComponent.tsx");
+/* harmony import */ var _bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @bigcommerce/checkout/utility */ "./packages/utility/src/navigateToOrderConfirmation.ts");
+
+
+
+
+
+const ApplePayButton = (props) => {
+    const { language, onUnhandledError } = props;
+    const integrations = [_bigcommerce_checkout_sdk_integrations_apple_pay__WEBPACK_IMPORTED_MODULE_0__.createApplePayCustomerStrategy];
+    const additionalInitializationOptions = {
+        shippingLabel: language.translate('cart.shipping_text'),
+        subtotalLabel: language.translate('cart.subtotal_text'),
+        onPaymentAuthorize: _bigcommerce_checkout_utility__WEBPACK_IMPORTED_MODULE_4__["default"],
+        onError: onUnhandledError,
+    };
+    return (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_bigcommerce_checkout_checkout_button_integration__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({ additionalInitializationOptions: additionalInitializationOptions, integrations: integrations }, props)));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__["default"])(ApplePayButton, [
+    { id: 'applepay' },
+]));
+
 
 /***/ },
 
@@ -25,7 +46,62 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \**********************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ \"./node_modules/tslib/tslib.es6.mjs\");\n/* harmony import */ var _bigcommerce_checkout_sdk_integrations_apple_pay__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout-sdk/integrations/apple-pay */ \"./node_modules/@bigcommerce/checkout-sdk/dist/esm/integrations/apple-pay.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ \"./packages/payment-integration-api/src/toResolvableComponent.tsx\");\n\n\n\n\nconst ApplePayPaymentMethod = ({ method, checkoutService, language, onUnhandledError, }) => {\n    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {\n        const initializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {\n            try {\n                yield checkoutService.initializePayment({\n                    gatewayId: method.gateway,\n                    methodId: method.id,\n                    integrations: [_bigcommerce_checkout_sdk_integrations_apple_pay__WEBPACK_IMPORTED_MODULE_1__.createApplePayPaymentStrategy],\n                    applepay: {\n                        shippingLabel: language.translate('cart.shipping_text'),\n                        subtotalLabel: language.translate('cart.subtotal_text'),\n                    },\n                });\n            }\n            catch (error) {\n                if (error instanceof Error) {\n                    onUnhandledError(error);\n                }\n            }\n        });\n        void initializePayment();\n        return () => {\n            const deinitializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {\n                try {\n                    yield checkoutService.deinitializePayment({\n                        gatewayId: method.gateway,\n                        methodId: method.id,\n                    });\n                }\n                catch (error) {\n                    if (error instanceof Error) {\n                        onUnhandledError(error);\n                    }\n                }\n            });\n            void deinitializePayment();\n        };\n    }, [checkoutService, language, method, onUnhandledError]);\n    // eslint-disable-next-line react/jsx-no-useless-fragment\n    return react__WEBPACK_IMPORTED_MODULE_2___default().createElement((react__WEBPACK_IMPORTED_MODULE_2___default().Fragment), null);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(ApplePayPaymentMethod, [{ id: 'applepay' }]));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9hcHBsZS1wYXktaW50ZWdyYXRpb24vc3JjL0FwcGxlUGF5UGF5bWVudE1ldGhvZC50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFpRztBQUNoQztBQU1WO0FBRXZELE1BQU0scUJBQXFCLEdBQTBDLENBQUMsRUFDbEUsTUFBTSxFQUNOLGVBQWUsRUFDZixRQUFRLEVBQ1IsZ0JBQWdCLEdBQ25CLEVBQUUsRUFBRTtJQUNELGdEQUFTLENBQUMsR0FBRyxFQUFFO1FBQ1gsTUFBTSxpQkFBaUIsR0FBRyxHQUFTLEVBQUUsQ0FBQztZQUNsQyxJQUFJLENBQUM7Z0JBQ0QsTUFBTSxlQUFlLENBQUMsaUJBQWlCLENBQUM7b0JBQ3BDLFNBQVMsRUFBRSxNQUFNLENBQUMsT0FBTztvQkFDekIsUUFBUSxFQUFFLE1BQU0sQ0FBQyxFQUFFO29CQUNuQixZQUFZLEVBQUUsQ0FBQywyR0FBNkIsQ0FBQztvQkFDN0MsUUFBUSxFQUFFO3dCQUNOLGFBQWEsRUFBRSxRQUFRLENBQUMsU0FBUyxDQUFDLG9CQUFvQixDQUFDO3dCQUN2RCxhQUFhLEVBQUUsUUFBUSxDQUFDLFNBQVMsQ0FBQyxvQkFBb0IsQ0FBQztxQkFDMUQ7aUJBQ0osQ0FBQyxDQUFDO1lBQ1AsQ0FBQztZQUFDLE9BQU8sS0FBSyxFQUFFLENBQUM7Z0JBQ2IsSUFBSSxLQUFLLFlBQVksS0FBSyxFQUFFLENBQUM7b0JBQ3pCLGdCQUFnQixDQUFDLEtBQUssQ0FBQyxDQUFDO2dCQUM1QixDQUFDO1lBQ0wsQ0FBQztRQUNMLENBQUMsRUFBQztRQUVGLEtBQUssaUJBQWlCLEVBQUUsQ0FBQztRQUV6QixPQUFPLEdBQUcsRUFBRTtZQUNSLE1BQU0sbUJBQW1CLEdBQUcsR0FBUyxFQUFFLENBQUM7Z0JBQ3BDLElBQUksQ0FBQztvQkFDRCxNQUFNLGVBQWUsQ0FBQyxtQkFBbUIsQ0FBQzt3QkFDdEMsU0FBUyxFQUFFLE1BQU0sQ0FBQyxPQUFPO3dCQUN6QixRQUFRLEVBQUUsTUFBTSxDQUFDLEVBQUU7cUJBQ3RCLENBQUMsQ0FBQztnQkFDUCxDQUFDO2dCQUFDLE9BQU8sS0FBSyxFQUFFLENBQUM7b0JBQ2IsSUFBSSxLQUFLLFlBQVksS0FBSyxFQUFFLENBQUM7d0JBQ3pCLGdCQUFnQixDQUFDLEtBQUssQ0FBQyxDQUFDO29CQUM1QixDQUFDO2dCQUNMLENBQUM7WUFDTCxDQUFDLEVBQUM7WUFFRixLQUFLLG1CQUFtQixFQUFFLENBQUM7UUFDL0IsQ0FBQyxDQUFDO0lBQ04sQ0FBQyxFQUFFLENBQUMsZUFBZSxFQUFFLFFBQVEsRUFBRSxNQUFNLEVBQUUsZ0JBQWdCLENBQUMsQ0FBQyxDQUFDO0lBRTFELHlEQUF5RDtJQUN6RCxPQUFPLHlIQUFLLENBQUM7QUFDakIsQ0FBQyxDQUFDO0FBRUYsaUVBQWUseUZBQXFCLENBQ2hDLHFCQUFxQixFQUNyQixDQUFDLEVBQUUsRUFBRSxFQUFFLFVBQVUsRUFBRSxDQUFDLENBQ3ZCLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGVja291dC8uL3BhY2thZ2VzL2FwcGxlLXBheS1pbnRlZ3JhdGlvbi9zcmMvQXBwbGVQYXlQYXltZW50TWV0aG9kLnRzeD9kOTdjIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNyZWF0ZUFwcGxlUGF5UGF5bWVudFN0cmF0ZWd5IH0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0LXNkay9pbnRlZ3JhdGlvbnMvYXBwbGUtcGF5JztcbmltcG9ydCBSZWFjdCwgeyB0eXBlIEZ1bmN0aW9uQ29tcG9uZW50LCB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7XG5cbmltcG9ydCB7XG4gICAgdHlwZSBQYXltZW50TWV0aG9kUHJvcHMsXG4gICAgdHlwZSBQYXltZW50TWV0aG9kUmVzb2x2ZUlkLFxuICAgIHRvUmVzb2x2YWJsZUNvbXBvbmVudCxcbn0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0L3BheW1lbnQtaW50ZWdyYXRpb24tYXBpJztcblxuY29uc3QgQXBwbGVQYXlQYXltZW50TWV0aG9kOiBGdW5jdGlvbkNvbXBvbmVudDxQYXltZW50TWV0aG9kUHJvcHM+ID0gKHtcbiAgICBtZXRob2QsXG4gICAgY2hlY2tvdXRTZXJ2aWNlLFxuICAgIGxhbmd1YWdlLFxuICAgIG9uVW5oYW5kbGVkRXJyb3IsXG59KSA9PiB7XG4gICAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICAgICAgY29uc3QgaW5pdGlhbGl6ZVBheW1lbnQgPSBhc3luYyAoKSA9PiB7XG4gICAgICAgICAgICB0cnkge1xuICAgICAgICAgICAgICAgIGF3YWl0IGNoZWNrb3V0U2VydmljZS5pbml0aWFsaXplUGF5bWVudCh7XG4gICAgICAgICAgICAgICAgICAgIGdhdGV3YXlJZDogbWV0aG9kLmdhdGV3YXksXG4gICAgICAgICAgICAgICAgICAgIG1ldGhvZElkOiBtZXRob2QuaWQsXG4gICAgICAgICAgICAgICAgICAgIGludGVncmF0aW9uczogW2NyZWF0ZUFwcGxlUGF5UGF5bWVudFN0cmF0ZWd5XSxcbiAgICAgICAgICAgICAgICAgICAgYXBwbGVwYXk6IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHNoaXBwaW5nTGFiZWw6IGxhbmd1YWdlLnRyYW5zbGF0ZSgnY2FydC5zaGlwcGluZ190ZXh0JyksXG4gICAgICAgICAgICAgICAgICAgICAgICBzdWJ0b3RhbExhYmVsOiBsYW5ndWFnZS50cmFuc2xhdGUoJ2NhcnQuc3VidG90YWxfdGV4dCcpLFxuICAgICAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgICAgICAgICAgICBpZiAoZXJyb3IgaW5zdGFuY2VvZiBFcnJvcikge1xuICAgICAgICAgICAgICAgICAgICBvblVuaGFuZGxlZEVycm9yKGVycm9yKTtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9XG4gICAgICAgIH07XG5cbiAgICAgICAgdm9pZCBpbml0aWFsaXplUGF5bWVudCgpO1xuXG4gICAgICAgIHJldHVybiAoKSA9PiB7XG4gICAgICAgICAgICBjb25zdCBkZWluaXRpYWxpemVQYXltZW50ID0gYXN5bmMgKCkgPT4ge1xuICAgICAgICAgICAgICAgIHRyeSB7XG4gICAgICAgICAgICAgICAgICAgIGF3YWl0IGNoZWNrb3V0U2VydmljZS5kZWluaXRpYWxpemVQYXltZW50KHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGdhdGV3YXlJZDogbWV0aG9kLmdhdGV3YXksXG4gICAgICAgICAgICAgICAgICAgICAgICBtZXRob2RJZDogbWV0aG9kLmlkLFxuICAgICAgICAgICAgICAgICAgICB9KTtcbiAgICAgICAgICAgICAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgICAgICAgICAgICAgICBpZiAoZXJyb3IgaW5zdGFuY2VvZiBFcnJvcikge1xuICAgICAgICAgICAgICAgICAgICAgICAgb25VbmhhbmRsZWRFcnJvcihlcnJvcik7XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9O1xuXG4gICAgICAgICAgICB2b2lkIGRlaW5pdGlhbGl6ZVBheW1lbnQoKTtcbiAgICAgICAgfTtcbiAgICB9LCBbY2hlY2tvdXRTZXJ2aWNlLCBsYW5ndWFnZSwgbWV0aG9kLCBvblVuaGFuZGxlZEVycm9yXSk7XG5cbiAgICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgcmVhY3QvanN4LW5vLXVzZWxlc3MtZnJhZ21lbnRcbiAgICByZXR1cm4gPD48Lz47XG59O1xuXG5leHBvcnQgZGVmYXVsdCB0b1Jlc29sdmFibGVDb21wb25lbnQ8UGF5bWVudE1ldGhvZFByb3BzLCBQYXltZW50TWV0aG9kUmVzb2x2ZUlkPihcbiAgICBBcHBsZVBheVBheW1lbnRNZXRob2QsXG4gICAgW3sgaWQ6ICdhcHBsZXBheScgfV0sXG4pO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/apple-pay-integration/src/ApplePayPaymentMethod.tsx\n\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.mjs");
+/* harmony import */ var _bigcommerce_checkout_sdk_integrations_apple_pay__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @bigcommerce/checkout-sdk/integrations/apple-pay */ "./node_modules/@bigcommerce/checkout-sdk/dist/esm/integrations/apple-pay.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ "./packages/payment-integration-api/src/toResolvableComponent.tsx");
+
+
+
+
+const ApplePayPaymentMethod = ({ method, checkoutService, language, onUnhandledError, }) => {
+    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(() => {
+        const initializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
+            try {
+                yield checkoutService.initializePayment({
+                    gatewayId: method.gateway,
+                    methodId: method.id,
+                    integrations: [_bigcommerce_checkout_sdk_integrations_apple_pay__WEBPACK_IMPORTED_MODULE_1__.createApplePayPaymentStrategy],
+                    applepay: {
+                        shippingLabel: language.translate('cart.shipping_text'),
+                        subtotalLabel: language.translate('cart.subtotal_text'),
+                    },
+                });
+            }
+            catch (error) {
+                if (error instanceof Error) {
+                    onUnhandledError(error);
+                }
+            }
+        });
+        void initializePayment();
+        return () => {
+            const deinitializePayment = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
+                try {
+                    yield checkoutService.deinitializePayment({
+                        gatewayId: method.gateway,
+                        methodId: method.id,
+                    });
+                }
+                catch (error) {
+                    if (error instanceof Error) {
+                        onUnhandledError(error);
+                    }
+                }
+            });
+            void deinitializePayment();
+        };
+    }, [checkoutService, language, method, onUnhandledError]);
+    // eslint-disable-next-line react/jsx-no-useless-fragment
+    return react__WEBPACK_IMPORTED_MODULE_2___default().createElement((react__WEBPACK_IMPORTED_MODULE_2___default().Fragment), null);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_3__["default"])(ApplePayPaymentMethod, [{ id: 'applepay' }]));
+
 
 /***/ },
 
@@ -35,7 +111,16 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \*****************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ApplePayButton: () => (/* reexport safe */ _ApplePayButton__WEBPACK_IMPORTED_MODULE_0__[\"default\"]),\n/* harmony export */   ApplePayPaymentMethod: () => (/* reexport safe */ _ApplePayPaymentMethod__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _ApplePayButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ApplePayButton */ \"./packages/apple-pay-integration/src/ApplePayButton.tsx\");\n/* harmony import */ var _ApplePayPaymentMethod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ApplePayPaymentMethod */ \"./packages/apple-pay-integration/src/ApplePayPaymentMethod.tsx\");\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9hcHBsZS1wYXktaW50ZWdyYXRpb24vc3JjL2luZGV4LnRzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBNkQ7QUFDYyIsInNvdXJjZXMiOlsid2VicGFjazovL2NoZWNrb3V0Ly4vcGFja2FnZXMvYXBwbGUtcGF5LWludGVncmF0aW9uL3NyYy9pbmRleC50cz8zZWM3Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCB7IGRlZmF1bHQgYXMgQXBwbGVQYXlCdXR0b24gfSBmcm9tICcuL0FwcGxlUGF5QnV0dG9uJztcbmV4cG9ydCB7IGRlZmF1bHQgYXMgQXBwbGVQYXlQYXltZW50TWV0aG9kIH0gZnJvbSAnLi9BcHBsZVBheVBheW1lbnRNZXRob2QnO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/apple-pay-integration/src/index.ts\n\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ApplePayButton: () => (/* reexport safe */ _ApplePayButton__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   ApplePayPaymentMethod: () => (/* reexport safe */ _ApplePayPaymentMethod__WEBPACK_IMPORTED_MODULE_1__["default"])
+/* harmony export */ });
+/* harmony import */ var _ApplePayButton__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ApplePayButton */ "./packages/apple-pay-integration/src/ApplePayButton.tsx");
+/* harmony import */ var _ApplePayPaymentMethod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ApplePayPaymentMethod */ "./packages/apple-pay-integration/src/ApplePayPaymentMethod.tsx");
+
+
+
 
 /***/ },
 
@@ -45,7 +130,53 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \*********************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ \"./node_modules/tslib/tslib.es6.mjs\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ \"./packages/payment-integration-api/src/toResolvableComponent.tsx\");\n\n\n\nconst CheckoutButton = ({ checkoutService: { deinitializeCustomer, initializeCustomer }, checkoutButtonContainerClass, containerId, methodId, onUnhandledError, onWalletButtonClick, additionalInitializationOptions, integrations, }) => {\n    const initializeCustomerStrategyOrThrow = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {\n        try {\n            yield initializeCustomer({\n                methodId,\n                integrations,\n                [methodId]: Object.assign({ container: containerId, onUnhandledError, onClick: () => onWalletButtonClick(methodId) }, additionalInitializationOptions),\n            });\n        }\n        catch (error) {\n            if (typeof onUnhandledError === 'function' && error instanceof Error) {\n                onUnhandledError(error);\n            }\n        }\n    });\n    const deinitializeCustomerStrategyOrThrow = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {\n        try {\n            yield deinitializeCustomer({ methodId });\n        }\n        catch (error) {\n            if (typeof onUnhandledError === 'function' && error instanceof Error) {\n                onUnhandledError(error);\n            }\n        }\n    });\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {\n        void initializeCustomerStrategyOrThrow();\n        return () => {\n            void deinitializeCustomerStrategyOrThrow();\n        };\n        // eslint-disable-next-line react-hooks/exhaustive-deps\n    }, []);\n    return (react__WEBPACK_IMPORTED_MODULE_1___default().createElement(\"div\", { className: checkoutButtonContainerClass, \"data-test\": containerId, id: containerId }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(CheckoutButton, []));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9jaGVja291dC1idXR0b24taW50ZWdyYXRpb24vc3JjL0NoZWNrb3V0QnV0dG9uLnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBaUU7QUFNVjtBQUV2RCxNQUFNLGNBQWMsR0FBMkMsQ0FBQyxFQUM1RCxlQUFlLEVBQUUsRUFBRSxvQkFBb0IsRUFBRSxrQkFBa0IsRUFBRSxFQUM3RCw0QkFBNEIsRUFDNUIsV0FBVyxFQUNYLFFBQVEsRUFDUixnQkFBZ0IsRUFDaEIsbUJBQW1CLEVBQ25CLCtCQUErQixFQUMvQixZQUFZLEdBQ2YsRUFBRSxFQUFFO0lBQ0QsTUFBTSxpQ0FBaUMsR0FBRyxHQUFTLEVBQUUsQ0FBQztRQUNsRCxJQUFJLENBQUM7WUFDRCxNQUFNLGtCQUFrQixDQUFDO2dCQUNyQixRQUFRO2dCQUNSLFlBQVk7Z0JBQ1osQ0FBQyxRQUFRLENBQUMsa0JBQ04sU0FBUyxFQUFFLFdBQVcsRUFDdEIsZ0JBQWdCLEVBQ2hCLE9BQU8sRUFBRSxHQUFHLEVBQUUsQ0FBQyxtQkFBbUIsQ0FBQyxRQUFRLENBQUMsSUFDekMsK0JBQStCLENBQ3JDO2FBQ0osQ0FBQyxDQUFDO1FBQ1AsQ0FBQztRQUFDLE9BQU8sS0FBSyxFQUFFLENBQUM7WUFDYixJQUFJLE9BQU8sZ0JBQWdCLEtBQUssVUFBVSxJQUFJLEtBQUssWUFBWSxLQUFLLEVBQUUsQ0FBQztnQkFDbkUsZ0JBQWdCLENBQUMsS0FBSyxDQUFDLENBQUM7WUFDNUIsQ0FBQztRQUNMLENBQUM7SUFDTCxDQUFDLEVBQUM7SUFFRixNQUFNLG1DQUFtQyxHQUFHLEdBQVMsRUFBRSxDQUFDO1FBQ3BELElBQUksQ0FBQztZQUNELE1BQU0sb0JBQW9CLENBQUMsRUFBRSxRQUFRLEVBQUUsQ0FBQyxDQUFDO1FBQzdDLENBQUM7UUFBQyxPQUFPLEtBQUssRUFBRSxDQUFDO1lBQ2IsSUFBSSxPQUFPLGdCQUFnQixLQUFLLFVBQVUsSUFBSSxLQUFLLFlBQVksS0FBSyxFQUFFLENBQUM7Z0JBQ25FLGdCQUFnQixDQUFDLEtBQUssQ0FBQyxDQUFDO1lBQzVCLENBQUM7UUFDTCxDQUFDO0lBQ0wsQ0FBQyxFQUFDO0lBRUYsZ0RBQVMsQ0FBQyxHQUFHLEVBQUU7UUFDWCxLQUFLLGlDQUFpQyxFQUFFLENBQUM7UUFFekMsT0FBTyxHQUFHLEVBQUU7WUFDUixLQUFLLG1DQUFtQyxFQUFFLENBQUM7UUFDL0MsQ0FBQyxDQUFDO1FBQ0YsdURBQXVEO0lBQzNELENBQUMsRUFBRSxFQUFFLENBQUMsQ0FBQztJQUVQLE9BQU8sQ0FDSCxvRUFBSyxTQUFTLEVBQUUsNEJBQTRCLGVBQWEsV0FBVyxFQUFFLEVBQUUsRUFBRSxXQUFXLEdBQUksQ0FDNUYsQ0FBQztBQUNOLENBQUMsQ0FBQztBQUVGLGlFQUFlLHlGQUFxQixDQUNoQyxjQUFjLEVBQ2QsRUFBRSxDQUNMLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGVja291dC8uL3BhY2thZ2VzL2NoZWNrb3V0LWJ1dHRvbi1pbnRlZ3JhdGlvbi9zcmMvQ2hlY2tvdXRCdXR0b24udHN4P2Y2NzkiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IHR5cGUgRnVuY3Rpb25Db21wb25lbnQsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JztcblxuaW1wb3J0IHtcbiAgICB0eXBlIENoZWNrb3V0QnV0dG9uUHJvcHMsXG4gICAgdHlwZSBDaGVja291dEJ1dHRvblJlc29sdmVJZCxcbiAgICB0b1Jlc29sdmFibGVDb21wb25lbnQsXG59IGZyb20gJ0BiaWdjb21tZXJjZS9jaGVja291dC9wYXltZW50LWludGVncmF0aW9uLWFwaSc7XG5cbmNvbnN0IENoZWNrb3V0QnV0dG9uOiBGdW5jdGlvbkNvbXBvbmVudDxDaGVja291dEJ1dHRvblByb3BzPiA9ICh7XG4gICAgY2hlY2tvdXRTZXJ2aWNlOiB7IGRlaW5pdGlhbGl6ZUN1c3RvbWVyLCBpbml0aWFsaXplQ3VzdG9tZXIgfSxcbiAgICBjaGVja291dEJ1dHRvbkNvbnRhaW5lckNsYXNzLFxuICAgIGNvbnRhaW5lcklkLFxuICAgIG1ldGhvZElkLFxuICAgIG9uVW5oYW5kbGVkRXJyb3IsXG4gICAgb25XYWxsZXRCdXR0b25DbGljayxcbiAgICBhZGRpdGlvbmFsSW5pdGlhbGl6YXRpb25PcHRpb25zLFxuICAgIGludGVncmF0aW9ucyxcbn0pID0+IHtcbiAgICBjb25zdCBpbml0aWFsaXplQ3VzdG9tZXJTdHJhdGVneU9yVGhyb3cgPSBhc3luYyAoKSA9PiB7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgICBhd2FpdCBpbml0aWFsaXplQ3VzdG9tZXIoe1xuICAgICAgICAgICAgICAgIG1ldGhvZElkLFxuICAgICAgICAgICAgICAgIGludGVncmF0aW9ucyxcbiAgICAgICAgICAgICAgICBbbWV0aG9kSWRdOiB7XG4gICAgICAgICAgICAgICAgICAgIGNvbnRhaW5lcjogY29udGFpbmVySWQsXG4gICAgICAgICAgICAgICAgICAgIG9uVW5oYW5kbGVkRXJyb3IsXG4gICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s6ICgpID0+IG9uV2FsbGV0QnV0dG9uQ2xpY2sobWV0aG9kSWQpLFxuICAgICAgICAgICAgICAgICAgICAuLi5hZGRpdGlvbmFsSW5pdGlhbGl6YXRpb25PcHRpb25zLFxuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB9KTtcbiAgICAgICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgICAgICAgIGlmICh0eXBlb2Ygb25VbmhhbmRsZWRFcnJvciA9PT0gJ2Z1bmN0aW9uJyAmJiBlcnJvciBpbnN0YW5jZW9mIEVycm9yKSB7XG4gICAgICAgICAgICAgICAgb25VbmhhbmRsZWRFcnJvcihlcnJvcik7XG4gICAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICB9O1xuXG4gICAgY29uc3QgZGVpbml0aWFsaXplQ3VzdG9tZXJTdHJhdGVneU9yVGhyb3cgPSBhc3luYyAoKSA9PiB7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgICBhd2FpdCBkZWluaXRpYWxpemVDdXN0b21lcih7IG1ldGhvZElkIH0pO1xuICAgICAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgICAgICAgaWYgKHR5cGVvZiBvblVuaGFuZGxlZEVycm9yID09PSAnZnVuY3Rpb24nICYmIGVycm9yIGluc3RhbmNlb2YgRXJyb3IpIHtcbiAgICAgICAgICAgICAgICBvblVuaGFuZGxlZEVycm9yKGVycm9yKTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuICAgIH07XG5cbiAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgICB2b2lkIGluaXRpYWxpemVDdXN0b21lclN0cmF0ZWd5T3JUaHJvdygpO1xuXG4gICAgICAgIHJldHVybiAoKSA9PiB7XG4gICAgICAgICAgICB2b2lkIGRlaW5pdGlhbGl6ZUN1c3RvbWVyU3RyYXRlZ3lPclRocm93KCk7XG4gICAgICAgIH07XG4gICAgICAgIC8vIGVzbGludC1kaXNhYmxlLW5leHQtbGluZSByZWFjdC1ob29rcy9leGhhdXN0aXZlLWRlcHNcbiAgICB9LCBbXSk7XG5cbiAgICByZXR1cm4gKFxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2hlY2tvdXRCdXR0b25Db250YWluZXJDbGFzc30gZGF0YS10ZXN0PXtjb250YWluZXJJZH0gaWQ9e2NvbnRhaW5lcklkfSAvPlxuICAgICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCB0b1Jlc29sdmFibGVDb21wb25lbnQ8Q2hlY2tvdXRCdXR0b25Qcm9wcywgQ2hlY2tvdXRCdXR0b25SZXNvbHZlSWQ+KFxuICAgIENoZWNrb3V0QnV0dG9uLFxuICAgIFtdLFxuKTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./packages/checkout-button-integration/src/CheckoutButton.tsx\n\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.mjs");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @bigcommerce/checkout/payment-integration-api */ "./packages/payment-integration-api/src/toResolvableComponent.tsx");
+
+
+
+const CheckoutButton = ({ checkoutService: { deinitializeCustomer, initializeCustomer }, checkoutButtonContainerClass, containerId, methodId, onUnhandledError, onWalletButtonClick, additionalInitializationOptions, integrations, }) => {
+    const initializeCustomerStrategyOrThrow = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
+        try {
+            yield initializeCustomer({
+                methodId,
+                integrations,
+                [methodId]: Object.assign({ container: containerId, onUnhandledError, onClick: () => onWalletButtonClick(methodId) }, additionalInitializationOptions),
+            });
+        }
+        catch (error) {
+            if (typeof onUnhandledError === 'function' && error instanceof Error) {
+                onUnhandledError(error);
+            }
+        }
+    });
+    const deinitializeCustomerStrategyOrThrow = () => (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__awaiter)(void 0, void 0, void 0, function* () {
+        try {
+            yield deinitializeCustomer({ methodId });
+        }
+        catch (error) {
+            if (typeof onUnhandledError === 'function' && error instanceof Error) {
+                onUnhandledError(error);
+            }
+        }
+    });
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+        void initializeCustomerStrategyOrThrow();
+        return () => {
+            void deinitializeCustomerStrategyOrThrow();
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    return (react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", { className: checkoutButtonContainerClass, "data-test": containerId, id: containerId }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_bigcommerce_checkout_payment_integration_api__WEBPACK_IMPORTED_MODULE_2__["default"])(CheckoutButton, []));
+
 
 /***/ },
 
@@ -55,8 +186,21 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
   \************************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ toResolvableComponent)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction toResolvableComponent(\n// eslint-disable-next-line @typescript-eslint/naming-convention\nComponent, resolveIds) {\n    return Object.assign((props) => react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, Object.assign({}, props)), { resolveIds });\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9wYXltZW50LWludGVncmF0aW9uLWFwaS9zcmMvdG9SZXNvbHZhYmxlQ29tcG9uZW50LnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7QUFBa0Q7QUFJbkMsU0FBUyxxQkFBcUI7QUFDekMsZ0VBQWdFO0FBQ2hFLFNBQWdDLEVBQ2hDLFVBQXlCO0lBRXpCLE9BQU8sTUFBTSxDQUFDLE1BQU0sQ0FBQyxDQUFDLEtBQWEsRUFBRSxFQUFFLENBQUMsMkRBQUMsU0FBUyxvQkFBSyxLQUFLLEVBQUksRUFBRSxFQUFFLFVBQVUsRUFBRSxDQUFDLENBQUM7QUFDdEYsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2NoZWNrb3V0Ly4vcGFja2FnZXMvcGF5bWVudC1pbnRlZ3JhdGlvbi1hcGkvc3JjL3RvUmVzb2x2YWJsZUNvbXBvbmVudC50c3g/ZjFhNCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdHlwZSBDb21wb25lbnRUeXBlIH0gZnJvbSAncmVhY3QnO1xuXG5pbXBvcnQgdHlwZSBSZXNvbHZhYmxlQ29tcG9uZW50IGZyb20gJy4vUmVzb2x2YWJsZUNvbXBvbmVudCc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIHRvUmVzb2x2YWJsZUNvbXBvbmVudDxUUHJvcHMgZXh0ZW5kcyBSZWNvcmQ8c3RyaW5nLCBhbnk+LCBUSWRlbnRpZmllcj4oXG4gICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEB0eXBlc2NyaXB0LWVzbGludC9uYW1pbmctY29udmVudGlvblxuICAgIENvbXBvbmVudDogQ29tcG9uZW50VHlwZTxUUHJvcHM+LFxuICAgIHJlc29sdmVJZHM6IFRJZGVudGlmaWVyW10sXG4pOiBSZXNvbHZhYmxlQ29tcG9uZW50PFRQcm9wcywgVElkZW50aWZpZXI+IHtcbiAgICByZXR1cm4gT2JqZWN0LmFzc2lnbigocHJvcHM6IFRQcm9wcykgPT4gPENvbXBvbmVudCB7Li4ucHJvcHN9IC8+LCB7IHJlc29sdmVJZHMgfSk7XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./packages/payment-integration-api/src/toResolvableComponent.tsx\n\n}");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ toResolvableComponent)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+function toResolvableComponent(
+// eslint-disable-next-line @typescript-eslint/naming-convention
+Component, resolveIds) {
+    return Object.assign((props) => react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, Object.assign({}, props)), { resolveIds });
+}
+
 
 /***/ }
 
 }]);
+//# sourceMappingURL=apple-pay-button.js.map
