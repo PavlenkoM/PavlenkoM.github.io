@@ -259,16 +259,6 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpa
 
 /***/ },
 
-/***/ "./packages/ui/src/responsive/isSmallScreen.ts"
-/*!*****************************************************!*\
-  !*** ./packages/ui/src/responsive/isSmallScreen.ts ***!
-  \*****************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   isSmallScreen: () => (/* binding */ isSmallScreen)\n/* harmony export */ });\n/* harmony import */ var _breakpoints__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./breakpoints */ \"./packages/ui/src/responsive/breakpoints.ts\");\n\n\nlet query;\nfunction isSmallScreen() {\n  query = window.matchMedia(`(max-width: ${_breakpoints__WEBPACK_IMPORTED_MODULE_0__.SMALL_SCREEN_MAX_WIDTH}px)`);\n  return query.matches;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy91aS9zcmMvcmVzcG9uc2l2ZS9pc1NtYWxsU2NyZWVuLnRzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUF1QztBQUV2QyxJQUFJO0FBRUcsU0FBUyxnQkFBZ0I7QUFDNUIsVUFBUSxPQUFPLFdBQVcsZUFBZSxnRUFBc0IsS0FBSztBQUVwRSxTQUFPLE1BQU07QUFDakIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGVja291dC8uL3BhY2thZ2VzL3VpL3NyYy9yZXNwb25zaXZlL2lzU21hbGxTY3JlZW4udHM/YWJkYSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBTTUFMTF9TQ1JFRU5fTUFYX1dJRFRIIH0gZnJvbSAnLi9icmVha3BvaW50cyc7XG5cbmxldCBxdWVyeTogTWVkaWFRdWVyeUxpc3Q7XG5cbmV4cG9ydCBmdW5jdGlvbiBpc1NtYWxsU2NyZWVuKCkge1xuICAgIHF1ZXJ5ID0gd2luZG93Lm1hdGNoTWVkaWEoYChtYXgtd2lkdGg6ICR7U01BTExfU0NSRUVOX01BWF9XSURUSH1weClgKTtcblxuICAgIHJldHVybiBxdWVyeS5tYXRjaGVzO1xufVxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/ui/src/responsive/isSmallScreen.ts\n\n}");
-
-/***/ },
-
 /***/ "./packages/ui/src/switch/Switch.tsx"
 /*!*******************************************!*\
   !*** ./packages/ui/src/switch/Switch.tsx ***!
