@@ -1,0 +1,32 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdatecheckout"]("customer",{
+
+/***/ "./packages/core/src/app/common/utility/isFloatingLabelEnabled.ts"
+/*!************************************************************************!*\
+  !*** ./packages/core/src/app/common/utility/isFloatingLabelEnabled.ts ***!
+  \************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ isFloatingLabelEnabled)\n/* harmony export */ });\n\nfunction isFloatingLabelEnabled(checkoutSettings) {\n  return checkoutSettings.checkoutUserExperienceSettings.floatingLabelEnabled;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9jb3JlL3NyYy9hcHAvY29tbW9uL3V0aWxpdHkvaXNGbG9hdGluZ0xhYmVsRW5hYmxlZC50cyIsIm1hcHBpbmdzIjoiOzs7OztBQUVlLFNBQVMsdUJBQXVCLGtCQUE2QztBQUN4RixTQUFPLGlCQUFpQiwrQkFBK0I7QUFDM0QiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jaGVja291dC8uL3BhY2thZ2VzL2NvcmUvc3JjL2FwcC9jb21tb24vdXRpbGl0eS9pc0Zsb2F0aW5nTGFiZWxFbmFibGVkLnRzP2FiMGYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgdHlwZSBDaGVja291dFNldHRpbmdzIH0gZnJvbSAnQGJpZ2NvbW1lcmNlL2NoZWNrb3V0LXNkayc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGlzRmxvYXRpbmdMYWJlbEVuYWJsZWQoY2hlY2tvdXRTZXR0aW5nczogQ2hlY2tvdXRTZXR0aW5ncyk6IGJvb2xlYW4ge1xuICAgIHJldHVybiBjaGVja291dFNldHRpbmdzLmNoZWNrb3V0VXNlckV4cGVyaWVuY2VTZXR0aW5ncy5mbG9hdGluZ0xhYmVsRW5hYmxlZDtcbn1cbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./packages/core/src/app/common/utility/isFloatingLabelEnabled.ts\n\n}");
+
+/***/ },
+
+/***/ "./packages/core/src/app/formFields/mapCustomFormFieldsFromFormValues.ts"
+/*!*******************************************************************************!*\
+  !*** ./packages/core/src/app/formFields/mapCustomFormFieldsFromFormValues.ts ***!
+  \*******************************************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ mapCustomFormFieldsFromFormValues)\n/* harmony export */ });\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction mapCustomFormFieldsFromFormValues(customFieldsObject) {\n  const customFields = [];\n  (0,lodash__WEBPACK_IMPORTED_MODULE_0__.forIn)(customFieldsObject, (value, key) => {\n    let fieldValue;\n    if ((0,lodash__WEBPACK_IMPORTED_MODULE_0__.isDate)(value)) {\n      const padMonth = (0,lodash__WEBPACK_IMPORTED_MODULE_0__.padStart)((value.getMonth() + 1).toString(), 2, \"0\");\n      const padDay = (0,lodash__WEBPACK_IMPORTED_MODULE_0__.padStart)(value.getDate().toString(), 2, \"0\");\n      fieldValue = `${value.getFullYear()}-${padMonth}-${padDay}`;\n    } else {\n      fieldValue = value;\n    }\n    customFields.push({\n      fieldId: key,\n      fieldValue\n    });\n  });\n  return customFields;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWNrYWdlcy9jb3JlL3NyYy9hcHAvZm9ybUZpZWxkcy9tYXBDdXN0b21Gb3JtRmllbGRzRnJvbUZvcm1WYWx1ZXMudHMiLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUF3QztBQUV6QixTQUFTLGtDQUFrQyxvQkFFUDtBQUMvQyxRQUFNLGVBQStELENBQUM7QUFFdEUsK0NBQUssQ0FBQyxvQkFBb0IsQ0FBQyxPQUFPLFFBQVE7QUFDdEMsUUFBSTtBQUVKLFFBQUksOENBQU0sQ0FBQyxLQUFLLEdBQUc7QUFDZixZQUFNLFdBQVcsZ0RBQVEsRUFBRSxNQUFNLFNBQVMsSUFBSSxHQUFHLFNBQVMsR0FBRyxHQUFHLEdBQUc7QUFDbkUsWUFBTSxTQUFTLGdEQUFRLENBQUMsTUFBTSxRQUFRLEVBQUUsU0FBUyxHQUFHLEdBQUcsR0FBRztBQUUxRCxtQkFBYSxHQUFHLE1BQU0sWUFBWSxDQUFDLElBQUksUUFBUSxJQUFJLE1BQU07QUFBQSxJQUM3RCxPQUFPO0FBQ0gsbUJBQWE7QUFBQSxJQUNqQjtBQUVBLGlCQUFhLEtBQUs7QUFBQSxNQUNkLFNBQVM7QUFBQSxNQUNUO0FBQUEsSUFDSixDQUFDO0FBQUEsRUFDTCxDQUFDO0FBRUQsU0FBTztBQUNYIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2hlY2tvdXQvLi9wYWNrYWdlcy9jb3JlL3NyYy9hcHAvZm9ybUZpZWxkcy9tYXBDdXN0b21Gb3JtRmllbGRzRnJvbUZvcm1WYWx1ZXMudHM/OGQ5ZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBmb3JJbiwgaXNEYXRlLCBwYWRTdGFydCB9IGZyb20gJ2xvZGFzaCc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIG1hcEN1c3RvbUZvcm1GaWVsZHNGcm9tRm9ybVZhbHVlcyhjdXN0b21GaWVsZHNPYmplY3Q6IHtcbiAgICBbaWQ6IHN0cmluZ106IGFueTtcbn0pOiBBcnJheTx7IGZpZWxkSWQ6IHN0cmluZzsgZmllbGRWYWx1ZTogc3RyaW5nIH0+IHtcbiAgICBjb25zdCBjdXN0b21GaWVsZHM6IEFycmF5PHsgZmllbGRJZDogc3RyaW5nOyBmaWVsZFZhbHVlOiBzdHJpbmcgfT4gPSBbXTtcblxuICAgIGZvckluKGN1c3RvbUZpZWxkc09iamVjdCwgKHZhbHVlLCBrZXkpID0+IHtcbiAgICAgICAgbGV0IGZpZWxkVmFsdWU6IHN0cmluZztcblxuICAgICAgICBpZiAoaXNEYXRlKHZhbHVlKSkge1xuICAgICAgICAgICAgY29uc3QgcGFkTW9udGggPSBwYWRTdGFydCgodmFsdWUuZ2V0TW9udGgoKSArIDEpLnRvU3RyaW5nKCksIDIsICcwJyk7XG4gICAgICAgICAgICBjb25zdCBwYWREYXkgPSBwYWRTdGFydCh2YWx1ZS5nZXREYXRlKCkudG9TdHJpbmcoKSwgMiwgJzAnKTtcblxuICAgICAgICAgICAgZmllbGRWYWx1ZSA9IGAke3ZhbHVlLmdldEZ1bGxZZWFyKCl9LSR7cGFkTW9udGh9LSR7cGFkRGF5fWA7XG4gICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICBmaWVsZFZhbHVlID0gdmFsdWU7XG4gICAgICAgIH1cblxuICAgICAgICBjdXN0b21GaWVsZHMucHVzaCh7XG4gICAgICAgICAgICBmaWVsZElkOiBrZXksXG4gICAgICAgICAgICBmaWVsZFZhbHVlLFxuICAgICAgICB9KTtcbiAgICB9KTtcblxuICAgIHJldHVybiBjdXN0b21GaWVsZHM7XG59XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./packages/core/src/app/formFields/mapCustomFormFieldsFromFormValues.ts\n\n}");
+
+/***/ }
+
+});
